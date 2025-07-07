@@ -315,7 +315,8 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 142%;
-        padding-left: 0px;
+        padding-left: 20px;
+        margin-left: -20px;
 
     }
 
@@ -364,8 +365,8 @@
     }
 
     .card_l {
-        padding: 0px 25px 25px 25px;
-        margin-left: -5px;
+        padding: 0px 25px 19px 25px;
+
     }
 
     .card_icon {
@@ -511,7 +512,7 @@
     .history_link {
         padding-top: 0px;
         margin-left: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
 
     .card_list {
