@@ -39,7 +39,7 @@
                 <div class="header__text">
                     <h1>Идеальные путешествия существуют</h1>
                     <p class="p_header">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-                    <a href="#anchorform"><button class="header_btn">Найти тур</button></a>
+                    <a href="#chooseanchor"><button class="header_btn">Найти тур</button></a>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
             </div>
             <div class="main__create">
                 <div class="create__header">
-                    <h2 class="h2_anchorform" id="anchorform">Собери свой тур</h2>
+                    <h2 class="h2">Собери свой тур</h2>
                     <p class="cr__p">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
                 </div>
                 <div class="create__form">
@@ -194,11 +194,11 @@
                                                 d="M13 19.4141L4.29289 10.707C3.90236 10.3164 3.90237 9.68326 4.29289 9.29274C4.68341 8.90221 5.31658 8.90221 5.7071 9.29274L13 16.5856L20.2929 9.29274C20.6834 8.90221 21.3166 8.90221 21.7071 9.29274C22.0976 9.68326 22.0976 10.3164 21.7071 10.707L13 19.4141Z"
                                                 fill="#1B1F2B" />
                                         </svg>
-                                        <select class="forms" name="select">
-                                            <option value="#">Куда хотите ехать</option>
-                                            <option value="#">Путешествие в горы</option>
-                                            <option value="#">Путешествие в горы</option>
-                                            <option value="#">Путешествие в горы</option>
+                                        <select class="forms_select forms" id="POST-search" name="select">
+                                            <option selected="true" disabled="disabled">Куда хотите ехать</option>
+                                            <option value="value1">Путешествие в горы</option>
+                                            <option value="value2">Путешествие в горы</option>
+                                            <option value="value3">Путешествие в горы</option>
                                         </select>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@
                             <div class="form__inline">
                                 <div class="form__in">
                                     <label for="POST-email">Email</label>
-                                    <input class="forms" id="POST-email" type="text" name="email"
+                                    <input class="forms" id="POST-email" type="email" name="email"
                                         placeholder="example@mail.com" required />
                                 </div>
                                 <div class="form__in">
@@ -220,13 +220,14 @@
                             <div class="form__inline">
                                 <div class="form__in">
                                     <label for="POST-text">Дата от</label>
-                                    <input class="forms" id="POST-text" type="text" name="date" min="2025-05-01"
-                                        max="2025-09-01" placeholder="ДД.ММ.ГГГГ" required />
+                                    <input class="forms form_POST-date" id="POST-date" type="text" name="date"
+                                        placeholder="ДД.ММ.ГГГГ" required />
+                                    <!-- min и max даты исключены, так как в макете нет значка даты -->
                                 </div>
                                 <div class="form__in">
                                     <label for="POST-text2">Дата до</label>
-                                    <input class="forms" id="POST-text2" type="text" name="date2" min="2025-05-01"
-                                        max="2025-09-01" placeholder="ДД.ММ.ГГГГ" required />
+                                    <input class="forms form_POST-date2" id="POST-date2" type="text" name="date2"
+                                        placeholder="ДД.ММ.ГГГГ" required />
                                 </div>
                             </div>
 
@@ -267,7 +268,7 @@
                             </div>
 
                             <div class="create__btns">
-                                <button type="button" class="create__btn">Найти тур</button>
+                                <button type="submit" class="create__btn">Найти тур</button>
                                 <input type="reset" class="create__inp" value="Сбросить" />
                             </div>
                         </div>

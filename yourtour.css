@@ -324,7 +324,7 @@ h3 {
 
 @media (min-width: 501px) {
 
-    .card_choose_img1:hover .card_link {
+    .card_hover:hover .card_link {
 
         background-color: #286562;
         border-radius: 50px;
@@ -411,7 +411,9 @@ h3 {
 }
 
 .create__header {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 100px;
 }
 
@@ -436,6 +438,7 @@ h3 {
     border: 1px solid #F4F0E9;
     background-color: #F9F7F4;
     padding: 15px 20px 20px 20px;
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 400;
     line-height: 142%;
@@ -458,13 +461,29 @@ select {
     color: #A6A6A6;
 }
 
+select option {
+    color: #1B1F2B;
+}
+
+/*.form_POST-date {
+    text-transform: uppercase;
+    color: #A6A6A6;
+
+}
+
+.form_POST-date2 {
+    text-transform: uppercase;
+    color: #A6A6A6;
+}
+
 /*input:invalid{
     border: 2px solid red;
 }
 
 input:valid {
     border: 2px solid #A6A6A6;
-} После JS доработать. */
+} После JS доработать. 
+ */
 
 .form__flcol {
 
@@ -514,7 +533,7 @@ textarea {
     resize: none;
 }
 
-.forms_comment:hover {
+.forms_comment:not(:focus):hover {
     background-color: #F4F0E9;
     border: 1px #F4F0E9;
 }
@@ -526,7 +545,7 @@ textarea {
 
 }
 
-.forms:hover {
+.forms:not(:focus):hover  {
     background-color: #F4F0E9;
     border: 1px #F4F0E9;
 }
@@ -800,6 +819,12 @@ option {
     font-size: 20px;
     color: #A6A6A6;
 
+}
+
+.reviews__h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reviews__cards {
@@ -1097,7 +1122,7 @@ ul {
 
 }
 
-.linhis:active {
+.card_his:active .card_link {
     background-color: #EFA501;
 }
 
@@ -1107,10 +1132,6 @@ ul {
 
         text-decoration: underline;
         cursor: pointer;
-    }
-
-    .link_his:active {
-        color: #EFA501;
     }
 
 }

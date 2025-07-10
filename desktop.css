@@ -63,8 +63,6 @@
 
 /*Медиа запросы блока create,choose*/
 
-@media (max-width: 1024px) {}
-
 
 @media (max-width: 1240px) {
 
@@ -128,6 +126,7 @@
         font-size: 16px;
         text-align: left;
         display: inline;
+        max-width: 510px;
     }
 
     .check__btn {
