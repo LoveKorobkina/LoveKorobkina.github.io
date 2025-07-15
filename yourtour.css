@@ -220,8 +220,6 @@ h2 {
 
     }
 
-
-
     .choose_orange:hover {
         text-decoration: none;
         color: #EFA501;
@@ -322,15 +320,10 @@ h3 {
 
 }
 
-@media (min-width: 501px) {
-
-    .card_hover:hover .card_link {
-
-        background-color: #286562;
-        border-radius: 50px;
-        cursor: pointer;
-    }
-
+.card_hover:hover .card_link {
+    background-color: #286562;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .card_icon {
@@ -391,13 +384,14 @@ h3 {
         cursor: pointer;
     }
 
+    .card:active .card_link {
+
+        background-color: #EFA501;
+        border-radius: 50px;
+    }
 }
 
-.card:active .card_link {
 
-    background-color: #EFA501;
-    border-radius: 50px;
-}
 
 /* Блок Собери свой тур*/
 
@@ -462,6 +456,10 @@ select {
 }
 
 select option {
+    color: #1B1F2B;
+}
+
+select:has(.selected-option:checked) {
     color: #1B1F2B;
 }
 
@@ -545,7 +543,7 @@ textarea {
 
 }
 
-.forms:not(:focus):hover  {
+.forms:not(:focus):hover {
     background-color: #F4F0E9;
     border: 1px #F4F0E9;
 }
@@ -1122,8 +1120,25 @@ ul {
 
 }
 
-.card_his:active .card_link {
+.card_hover:hover .card_linkhis {
+    background-color: #286562;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.card_linkhis.card_linkhis:active {
     background-color: #EFA501;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.link_his:hover {
+    color: #FFFFFF;
+}
+
+.link_his:active {
+    color: #EFA501;
 }
 
 @media (min-width: 501px) {
