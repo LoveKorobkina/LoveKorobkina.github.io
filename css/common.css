@@ -23,7 +23,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("Photos/header-img.png");
+    background-image: url("/images/headerPhoto.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -344,33 +344,33 @@ h3 {
 /* Подключенные картинки блока Выбери тур */
 
 .card_choose_img1 {
-    background-image: url("Photos/Choose your tour/card tour photo-1.png");
+    background-image: url("../images/photosChooseBlock/photoChoose1.png");
 
 }
 
 .card_choose_img2 {
 
-    background-image: url("Photos/Choose your tour/card tour photo-2.png");
+    background-image: url("../images/photosChooseBlock/photoChoose2.png");
 }
 
 .card_choose_img3 {
 
-    background-image: url("Photos/Choose your tour/card tour photo-3.png")
+    background-image: url("../images/photosChooseBlock/photoChoose3.png")
 }
 
 .card_choose_img4 {
 
-    background-image: url("Photos/Choose your tour/card tour photo-4.png")
+    background-image: url("../images/photosChooseBlock/photoChoose4.png")
 }
 
 .card_choose_img5 {
 
-    background-image: url("Photos/Choose your tour/card tour photo-5.png")
+    background-image: url("../images/photosChooseBlock/photoChoose5.png")
 }
 
 .card_choose_img6 {
 
-    background-image: url("Photos/Choose your tour/card tour photo-6.png")
+    background-image: url("../images/photosChooseBlock/photoChoose6.png")
 }
 
 /*------------------------------------------------------------------*/
@@ -1025,15 +1025,15 @@ option {
 /*Подключенные картинки на блок История путешествий(history)*/
 
 .history_img1 {
-    background-image: url("Photos/Travel stories/story photo-1.jpg");
+    background-image: url("../images/photosStoriesBlock/photoStories1.jpg");
 }
 
 .history_img2 {
-    background-image: url("Photos/Travel stories/story photo-2.jpg");
+    background-image: url("../images/photosStoriesBlock/photoStories2.jpg");
 }
 
 .history_img3 {
-    background-image: url("Photos/Travel stories/story photo-3.jpg");
+    background-image: url("../images/photosStoriesBlock/photoStories3.jpg");
 
 }
 
