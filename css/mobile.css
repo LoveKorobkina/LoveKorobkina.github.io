@@ -277,11 +277,11 @@
 
 }
 
-/*медиа запросы на блок choose*/
+/*медиа запросы на блок tour-selection__link*/
 
 @media (max-width: 500px) {
 
-    .main__choose {
+    .tour-selection {
         padding-bottom: 75px;
     }
 
@@ -303,14 +303,14 @@
         letter-spacing: 0.04em;
     }
 
-    .card_price {
+    .tour-selection__card-price {
 
         margin-top: 12px;
         font-size: 16px;
         letter-spacing: -0.01em;
     }
 
-    .card_link {
+    .tour-selection__card-icon {
 
         font-weight: 700;
         font-size: 16px;
@@ -320,26 +320,26 @@
 
     }
 
-    .choose__cards {
+    .tour-selection__cards {
 
         display: flex;
         flex-direction: column;
         padding-bottom: 0px;
     }
 
-    .choose {
+    .tour-selection__link {
 
         font-weight: 700;
         font-size: 16px;
         line-height: 142%;
     }
 
-    .choose_orange {
+    .tour-selection__link--orange {
         margin-top: 3px;
         padding-bottom: 0px;
     }
 
-    .choose__menu {
+    .tour-selection__links {
 
         font-size: 16px;
         font-weight: 700;
@@ -354,7 +354,7 @@
         margin-top: 2px;
     }
 
-    .card {
+    .tour-selection__card {
 
         min-width: 318px;
         width: 100%;
@@ -364,7 +364,7 @@
 
     }
 
-    .card_l {
+    .tour-selection__card-link {
         padding: 0px 25px 19px 25px;
 
     }
@@ -380,7 +380,7 @@
         height: 100%;
     }
 
-    .card_text {
+    .tour-selection__card-text {
 
         margin: 0px;
         padding: 25px 25px 0px 25px;

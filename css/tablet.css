@@ -76,11 +76,11 @@
     }
 }
 
-/*Медиа запросы блока choose Выбери свой тур*/
+/*Медиа запросы блока tour-selection__link Выбери свой тур*/
 
 @media (max-width: 800px) {
 
-    .choose__menu {
+    .tour-selection__links {
 
         padding-bottom: 50px;
         font-size: 16px;

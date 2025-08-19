@@ -17,13 +17,20 @@ a {
     color: white;
 }
 
+.section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
 /*Шапка сайта header*/
 
 .header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("/images/headerPhoto.png"); 
+    background-image: url("/images/headerPhoto.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -145,11 +152,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
-
+    align-items: center;
+    margin: 0 auto;
+    background-color: #F9F7F4;
 }
 
-/* Блок choose your tour*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Блок выбери тур tour-selection*/
 
 h2 {
 
@@ -163,7 +173,7 @@ h2 {
     line-height: 124%;
 }
 
-.choose {
+.tour-selection__link {
 
     color: #1B1F2B;
     font-weight: 700;
@@ -171,7 +181,7 @@ h2 {
 
 }
 
-.choose_orange {
+.tour-selection__link--orange {
 
     color: #EFA501;
     border-bottom: 2px solid #EFA501;
@@ -181,16 +191,16 @@ h2 {
     margin-top: 6px;
 }
 
-.choose__menu {
+.tour-selection__links {
 
     display: flex;
     gap: 31px;
     flex-wrap: wrap;
-    max-height: 35px;
     align-items: center;
+    padding-bottom: 100px;
 }
 
-.main__choose {
+.tour-selection {
 
     display: flex;
     flex-direction: column;
@@ -199,19 +209,9 @@ h2 {
 
 }
 
-.main__content {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #F9F7F4;
-
-}
-
 @media (min-width: 501px) {
 
-    .choose:hover {
+    .tour-selection__link:hover {
         border-bottom: 2px solid #1B1F2B;
         text-decoration: none;
         padding-bottom: 6px;
@@ -220,7 +220,7 @@ h2 {
 
     }
 
-    .choose_orange:hover {
+    .tour-selection__link--orange:hover {
         text-decoration: none;
         color: #EFA501;
         border-bottom: 2px solid #EFA501;
@@ -229,46 +229,61 @@ h2 {
         cursor: pointer;
     }
 
-}
-
-/* Блок choose__cards */
-
-
-@media (min-width: 501px) {
-
-    .choose__cards {
-
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        max-width: 1170px;
-        gap: 30px;
-
-    }
-
-    .card:hover {
+    .tour-selection__card:hover .tour-selection__image {
 
         cursor: pointer;
-        background-size: cover;
+        transform: scale(1.2);
+
+    }
+
+    .tour-selection__card:hover .tour-selection__card-icon {
+        background-color: #286562;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .tour-selection__card-icon:hover {
+
+        background-color: #286562;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .tour-selection__card:active .tour-selection__card-icon {
+
+        background-color: #EFA501;
+        border-radius: 50px;
     }
 
 }
 
+.tour-selection__cards {
 
-.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1170px;
+    gap: 30px;
+
+}
+
+.tour-selection__card {
 
     max-width: 370px;
     height: 531px;
     border-radius: 50px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    display: inline-block;
     transition: background-size 300ms ease;
     overflow: hidden;
-    background-size: 100% auto;
-    background-position: center;
+    position: relative;
+    display: flex;
+
+}
+
+.tour-selection__image {
+    transition: 300ms ease;
+    overflow: hidden;
+    display: block;
 
 }
 
@@ -278,24 +293,44 @@ h3 {
     font-size: 35px;
     line-height: 122%;
     margin: 0;
-    /* max-height: 87px;*/
 }
 
-.linear-gradient {
+.tour-selection__card-price {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 50px;
     height: 100%;
+    position: absolute;
+}
+
+.tour-selection__image-wrapper {
+    display: inline-block;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-selection__image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-
+    pointer-events: none;
 }
 
-.card_text {
+
+.tour-selection__card-text {
     padding: 50px 50px 0px 50px;
+
 }
 
-.card_price {
+.tour-selection__card-price {
 
     font-weight: 400;
     font-size: 17px;
@@ -305,11 +340,11 @@ h3 {
     margin-top: 16px;
 }
 
-.card_l {
+.tour-selection__card-link {
     padding: 0px 50px 42px 30px;
 }
 
-.card_link {
+.tour-selection__card-icon {
     font-size: 23px;
     font-weight: 700;
     line-height: 122%;
@@ -320,78 +355,13 @@ h3 {
 
 }
 
-.card_hover:hover .card_link {
-    background-color: #286562;
-    border-radius: 50px;
-    cursor: pointer;
-}
-
 .card_icon {
 
     margin-left: 15px;
     margin-top: -2px;
 }
 
-@media (min-width: 501px) {
-
-    .card_hover:hover {
-        background-position: center;
-        background-size: 130% auto;
-        cursor: pointer;
-    }
-}
-
-/* Подключенные картинки блока Выбери тур */
-
-.card_choose_img1 {
-    background-image: url("../images/photosChooseBlock/photoChoose1.png");
-
-}
-
-.card_choose_img2 {
-
-    background-image: url("../images/photosChooseBlock/photoChoose2.png");
-}
-
-.card_choose_img3 {
-
-    background-image: url("../images/photosChooseBlock/photoChoose3.png")
-}
-
-.card_choose_img4 {
-
-    background-image: url("../images/photosChooseBlock/photoChoose4.png")
-}
-
-.card_choose_img5 {
-
-    background-image: url("../images/photosChooseBlock/photoChoose5.png")
-}
-
-.card_choose_img6 {
-
-    background-image: url("../images/photosChooseBlock/photoChoose6.png")
-}
-
-/*------------------------------------------------------------------*/
-@media (min-width: 501px) {
-
-
-    .card_link:hover {
-
-        background-color: #286562;
-        border-radius: 50px;
-        cursor: pointer;
-    }
-
-    .card:active .card_link {
-
-        background-color: #EFA501;
-        border-radius: 50px;
-    }
-}
-
-
+/*------------------------------------------------------------------------------*/
 
 /* Блок Собери свой тур*/
 
@@ -900,8 +870,6 @@ option {
 
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-right: 30px;
     align-items: center;
 
 }
@@ -1120,7 +1088,7 @@ ul {
 
 }
 
-.card_hover:hover .card_linkhis {
+.card:hover .card_linkhis {
     background-color: #286562;
     border-radius: 50px;
     cursor: pointer;
