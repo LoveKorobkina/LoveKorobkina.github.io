@@ -21,28 +21,31 @@
 
 <body>
     <header class="header">
-        <div class="menu__header">
-            <a href="#">
-                <img class="logo" src="../images/icons/headerLogoWhite.png" alt="headerLogoWhite" width="181"
-                    height="30">
-                <img class="logo2" src="../images/icons/headerLogoDark.png" alt="headerLogoDark" width="133"
-                    height="22">
-            </a>
-            <div class="menu__bar">
-                <a class="menu" href="#selectionAnchor">Туры</a>
-                <a class="menu" href="#anchorform">Создать тур</a>
-                <a class="menu" href="#reviewsanchor">Отзывы</a>
-                <a class="menu" href="#hisanchor">Истории</a>
+        <section class="header-container">
+            <div class="header-container__menu">
+                <a href="#">
+                    <img class="header-container__logo_white logo" src="../images/icons/headerLogoWhite.png"
+                        alt="headerLogoWhite" width="181" height="30">
+                    <img class="header-container__logo_dark logo2" src="../images/icons/headerLogoDark.png"
+                        alt="headerLogoDark" width="133" height="22">
+                </a>
+                <div class="header-container__menu-links">
+                    <a class="header-container__menu-link" href="#selectionAnchor">Туры</a>
+                    <a class="header-container__menu-link" href="#anchorform">Создать тур</a>
+                    <a class="header-container__menu-link" href="#reviewsanchor">Отзывы</a>
+                    <a class="header-container__menu-link" href="#hisanchor">Истории</a>
+                </div>
+                <a class="header-container__menu-link menu-link__number" href="tel:+7 999 999 99 99">+7 999 999 99
+                    99</a>
             </div>
-            <a class="menu" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
-        </div>
-        <div class="header__h1">
-            <div class="header__text">
-                <h1>Идеальные путешествия существуют</h1>
-                <p class="p_header">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-                <a href="#selectionAnchor"><button class="header_btn">Найти тур</button></a>
+            <div class="header-container__title">
+                <div class="header-container__title-text">
+                    <h1>Идеальные путешествия существуют</h1>
+                    <p class="title-text_white">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                    <a href="#selectionAnchor"><button class="header-container__button">Найти тур</button></a>
+                </div>
             </div>
-        </div>
+        </section>
     </header>
     <main class="main">
         <section class="tour-selection section">
@@ -63,7 +66,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -86,7 +89,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -109,7 +112,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -132,7 +135,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -155,7 +158,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -178,7 +181,7 @@
                     <div class="tour-selection__card-price">
                         <div class="tour-selection__card-text">
                             <h3>Путешествие в горы</h3>
-                            <p class="tour-selection__card-price">
+                            <p class="card-price">
                                 от 80 000 руб</p>
                         </div>
                         <div class="tour-selection__card-link">
@@ -378,13 +381,13 @@
                 </div>
             </div>
         </div>
-        <div class="main__history">
+        <div class="main__history section">
             <div class="history__h2">
                 <h2 class="h2_hisanchor" id="hisanchor">Истории путешествий</h2>
                 <p class="p_history">Идейные соображения высшего порядка,<br>
                     а также рамки и место обучения кадров</p>
             </div>
-            <div class="his_cards">
+            <div class="his_cards section">
                 <div class="card_hover card_his history_img1">
                     <div class="linear-gradient_his">
                         <div class="cardhis_text">
@@ -478,7 +481,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__conclusion">
+        <div class="main__conclusion section">
             <div class="conclusion_elements">
                 <div class="con_img">
                     <img class="img_con" src="../images/footerPhoto.jpg" alt="footerimg">

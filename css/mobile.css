@@ -10,18 +10,12 @@
         letter-spacing: 0.02em;
     }
 
-
-    .header {
-
-        height: auto;
-    }
-
-    .header__text {
+    .header-container__title-text {
 
         gap: 39px;
     }
 
-    .header_btn {
+    .header-container__button {
         max-width: 118px;
         width: 100%;
         padding: 8px 21px 5px 20px;
@@ -32,7 +26,7 @@
 
 @media (max-width: 450px) {
 
-    .menu__header {
+    .header-container__menu {
         position: fixed;
         top: 0px;
         background-color: rgba(243, 239, 232, 0.6);
@@ -41,40 +35,37 @@
 
     }
 
-    .logo {
+    .header-container__logo_white {
         display: none;
     }
 
-    .logo2 {
+    .header-container__logo_dark {
         display: inline;
+        max-width: 133px;
+        max-height: 22px;
+        width: 100%;
+        height: 100%;
     }
 
-    .header__h1 {
+    .header-container__title {
 
         padding-top: 124px;
         padding-bottom: 52px;
 
     }
 
-    .menu {
+    .header-container__menu-link {
         max-width: 124px;
         max-height: 23px;
         font-size: 16px;
         font-weight: 400;
         line-height: 142%;
         color: rgba(27, 31, 43, 1);
+        align-items: center;
+        margin-top: 3px;
     }
 
-    .logo {
-        width: 133px;
-        height: 22px;
-    }
-
-    .menu__bar {
-        display: none;
-    }
-
-    p {
+    .title-text {
         max-width: 310px;
         max-height: 69px;
 
@@ -303,7 +294,7 @@
         letter-spacing: 0.04em;
     }
 
-    .tour-selection__card-price {
+    .card-price {
 
         margin-top: 12px;
         font-size: 16px;
@@ -373,13 +364,6 @@
         margin-top: -3px;
     }
 
-    .linear-gradient {
-        border-radius: 0px;
-        min-width: 318px;
-        min-height: 318px;
-        height: 100%;
-    }
-
     .tour-selection__card-text {
 
         margin: 0px;
@@ -389,6 +373,7 @@
     label {
         font-size: 16px;
         font-weight: 400;
+        line-height: 142%;
     }
 
     .form__in {
@@ -571,4 +556,3 @@
     }
 
 }
-

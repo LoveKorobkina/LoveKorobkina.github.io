@@ -38,46 +38,51 @@ a {
 
 }
 
-.header__menu {
+.header-container {
 
-    height: 88px;
-
+    display: flex;
+    flex-direction: column;
+    max-width: 1168px;
+    width: 100%;
+    align-items: center;
 }
 
-.menu__header {
+.header-container__menu {
 
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 28px 0px;
     max-height: 88px;
+    height: 100%;
     width: 100%;
     max-width: 1168px;
 }
 
-.logo2 {
+.header-container__logo_dark {
 
     display: none;
 }
 
-.menu__bar {
+.header-container__menu-links {
 
     display: inline-flex;
     gap: 50px;
 
 }
 
-.menu {
-
+.header-container__menu-link {
     font-size: 20px;
+    font-weight: 400;
+    line-height: 142%;
 }
 
-.menu:hover {
+.header-container__menu-link:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.header__text {
+.header-container__title-text {
 
     display: flex;
     flex-direction: column;
@@ -85,7 +90,6 @@ a {
     max-width: 768px;
     align-items: center;
     gap: 49px;
-
 
 }
 
@@ -98,7 +102,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-.header_btn {
+.header-container__button {
     width: 118px;
     height: 34px;
     padding: 5px 20px 5px 20px;
@@ -112,38 +116,47 @@ h1 {
 
 }
 
-.header_btn:active {
+.header-container__button:active {
 
     background-color: #F8E6BE;
     color: black;
 }
 
-.header_btn:hover {
+.header-container__button:hover {
 
     background-color: #EFA501;
     color: white;
     cursor: pointer;
 }
 
-
-p {
+.title-text {
     max-height: 56px;
-    font-size: 20px;
     text-align: center;
-    max-width: 562px;
     margin: 0;
+    max-width: 418px;
+    color: #A6A6A6;
+    font-size: 20px;
     line-height: 142%;
     font-weight: 400;
 }
 
-.header__h1 {
+.title-text_white {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: 400;
+    max-width: 562px;
+    max-height: 56px;
+    text-align: center;
+    margin: 0;
+}
+
+.header-container__title {
 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 119px 0px 119px 0px;
-
-
 }
 
 /* Main - основное содержимое сайта */
@@ -265,6 +278,7 @@ h2 {
     max-width: 1170px;
     gap: 30px;
 
+
 }
 
 .tour-selection__card {
@@ -277,6 +291,7 @@ h2 {
     overflow: hidden;
     position: relative;
     display: flex;
+    cursor: pointer;
 
 }
 
@@ -330,7 +345,7 @@ h3 {
 
 }
 
-.tour-selection__card-price {
+.card-price {
 
     font-weight: 400;
     font-size: 17px;
