@@ -132,7 +132,7 @@
 
 @media (max-width: 500px) {
 
-    .create__form {
+    .tour-create__form-wrapper {
         gap: 0px;
         padding: 17px 20px 40px 16px;
         max-width: 318px;
@@ -152,10 +152,6 @@
         right: 10px;
     }
 
-    .h2_anchorform {
-        padding-bottom: 22px;
-    }
-
     .forms {
 
         width: 278px;
@@ -173,7 +169,7 @@
         line-height: 142%;
     }
 
-    .cr__p {
+    .header-text {
 
         line-height: 142%;
         font-size: 16px;
@@ -182,7 +178,7 @@
 
     }
 
-    .create__header {
+    .tour-create__header {
 
         padding-bottom: 40px;
 

@@ -32,7 +32,7 @@
 
 @media (max-width: 1240px) {
 
-    .create__form {
+    .tour-create__form-wrapper {
 
         max-width: 918px;
         padding: 60px;
@@ -122,8 +122,8 @@
 @media (max-width: 1240px) {
 
     .main__photos {
-        margin-right: 20px;
-        margin-left: 20px;
+        /* margin-right: 20px;
+        margin-left: 20px;*/
     }
 
     .photos__traveler {

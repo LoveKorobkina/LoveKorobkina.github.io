@@ -31,7 +31,7 @@
                 </a>
                 <div class="header-container__menu-links">
                     <a class="header-container__menu-link" href="#selectionAnchor">Туры</a>
-                    <a class="header-container__menu-link" href="#anchorform">Создать тур</a>
+                    <a class="header-container__menu-link" href="#formAnchor">Создать тур</a>
                     <a class="header-container__menu-link" href="#reviewsanchor">Отзывы</a>
                     <a class="header-container__menu-link" href="#hisanchor">Истории</a>
                 </div>
@@ -41,7 +41,8 @@
             <div class="header-container__title">
                 <div class="header-container__title-text">
                     <h1>Идеальные путешествия существуют</h1>
-                    <p class="title-text_white">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                    <p class="title-text_white">Идейные соображения высшего порядка, а также рамки и место обучения
+                        кадров</p>
                     <a href="#selectionAnchor"><button class="header-container__button">Найти тур</button></a>
                 </div>
             </div>
@@ -49,7 +50,7 @@
     </header>
     <main class="main">
         <section class="tour-selection section">
-            <h2 id="selectionAnchor">Выбери свой тур</h2>
+            <h2 class="tour-selection__title" id="selectionAnchor">Выбери свой тур</h2>
             <div class="tour-selection__links">
                 <a class="tour-selection__link tour-selection__link--orange">Популярные</a>
                 <a class="tour-selection__link">Авторские</a>
@@ -198,16 +199,16 @@
                 </div>
             </div>
         </section>
-
-        <div class="main__create section">
-            <div class="create__header">
-                <a href="#" id="anchorform">
-                    <h2 class="h2">Собери свой тур</h2>
+        <section class="tour-create section">
+            <div class="tour-create__header title-wrapper">
+                <a href="#" id="formAnchor">
+                    <h2>Собери свой тур</h2>
                 </a>
-                <p class="cr__p">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
+                <p class="header-text">Идейные соображения высшего порядка,<br> а также рамки и место обучения
+                    кадров</p>
             </div>
-            <div class="create__form">
-                <form class="form" action="#selectionAnchor" method="get">
+            <div class="tour-create__form-wrapper">
+                <form action="#selectionAnchor" method="get">
                     <div class="form__input">
                         <div class="form__inline">
                             <div class="form__in">
@@ -306,11 +307,12 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
         <div class="main__reviews section">
-            <div class="reviews__h2">
+            <div class="reviews__h2 title-wrapper">
                 <h2 id="reviewsanchor">Отзывы наших<br>путешественников</h2>
-                <p class="reviews_p">Идейные соображения высшего порядка,<br>а также рамки и место обучения кадров
+                <p class="reviews_p header-text">Идейные соображения высшего порядка,<br>а также рамки и место обучения
+                    кадров
                 </p>
             </div>
             <div class="reviews__cards">
@@ -351,10 +353,10 @@
                 </div>
             </div>
         </div>
-        <div class="main__photos section">
-            <div class="photos__h2">
+        <div class="main__photos">
+            <div class="photos__h2 title-wrapper">
                 <h2 id="anchorphoto">Фотографии путешествий</h2>
-                <p class="p_photo">Идейные соображения высшего порядка,<br>
+                <p class="p_photo header-text">Идейные соображения высшего порядка,<br>
                     а также рамки и место обучения кадров</p>
             </div>
             <div class="photos__traveler">
@@ -382,9 +384,9 @@
             </div>
         </div>
         <div class="main__history section">
-            <div class="history__h2">
+            <div class="history__h2 title-wrapper">
                 <h2 class="h2_hisanchor" id="hisanchor">Истории путешествий</h2>
-                <p class="p_history">Идейные соображения высшего порядка,<br>
+                <p class="p_history header-text">Идейные соображения высшего порядка,<br>
                     а также рамки и место обучения кадров</p>
             </div>
             <div class="his_cards section">
