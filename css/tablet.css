@@ -119,19 +119,14 @@
 
 @media (max-width: 980px) {
 
-    .ch_p {
+    .form__agreement-text {
         padding: 0px;
         padding-left: 10px;
         text-align: left;
         display: inline-block;
+        margin: 0px;
     }
 
-    .check__btn {
-
-        display: inline-flex;
-        align-items: flex-start;
-
-    }
 }
 
 @media (max-width: 940px) {
@@ -141,13 +136,13 @@
         padding: 20px 20px 20px 20px;
     }
 
-    .form__input {
+    .form__row {
         max-width: 450px;
         align-items: center;
         gap: 30px;
     }
 
-    .form__inline {
+    .form__row {
         display: flex;
         flex-direction: column;
         height: auto;
@@ -156,50 +151,45 @@
         gap: 30px;
     }
 
-    .forms_comment {
+    textarea {
         max-width: 389px;
         max-height: 132px;
         height: 100%;
     }
 
-    .form_age {
+    .form__radio-group {
         max-width: 390px;
         width: 100%;
     }
 
-    .check__btn {
+    .form__agreement {
         max-width: 390px;
         width: 100%;
+        display: inline-flex;
+        align-items: flex-start;
     }
 
-    .checkbox {
+    .form__checkbox {
 
         width: 20px;
         height: 20px;
         padding: 7px;
     }
 
-    .ch_p {
-        margin: 0px;
-    }
-
     .header-text {
         font-size: 16px;
     }
 
-    .create__btns {
+    .form__buttons {
         gap: 10px;
     }
 
-    .create__btn {
+    .form__button-find,.form__button-reset {
         width: 190px;
         height: 50px;
     }
 
-    .create__inp {
-        width: 190px;
-        height: 50px;
-    }
+
 }
 
 /*Медиа запросы блока reviews(Отзывы)*/
@@ -507,7 +497,7 @@
         width: auto;
     }
 
-    .radio {
+    .form__radio-button_style {
         width: 20px;
         height: 20px;
     }

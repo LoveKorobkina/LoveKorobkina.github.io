@@ -140,19 +140,13 @@
         border-radius: 30px;
     }
 
-    .form__input {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .drop_img {
+    .form__dropdown-icon {
         position: absolute;
         top: 10px;
         right: 10px;
     }
 
-    .forms {
+    .form__input {
 
         width: 278px;
         height: 43px;
@@ -184,13 +178,13 @@
 
     }
 
-    .create__btns {
+    .form__buttons {
 
         display: inline-flex;
         margin-top: 3px;
     }
 
-    .create__btn {
+    .form__button-find,.form__button-reset {
         width: 134px;
         height: 47px;
         margin-right: 10px;
@@ -199,15 +193,7 @@
         line-height: 142%;
     }
 
-    .create__inp {
-        width: 134px;
-        height: 47px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-    }
-
-    .forms_comment {
+    textarea {
 
         width: 278px;
         height: 132px;
@@ -215,7 +201,7 @@
 
     }
 
-    .form__inline {
+    .form__row {
 
         display: flex;
         flex-direction: column;
@@ -224,7 +210,7 @@
         gap: 25px;
     }
 
-    .rad_lab {
+    .form__radio-input {
         width: 20px;
         height: 20px;
         margin: 0px;
@@ -233,14 +219,14 @@
         align-items: center;
     }
 
-    .rad_lab:checked+.radio::before {
+    .form__radio-input:checked+.form__radio-button_style::before {
         content: " ";
         display: block;
         width: 7px;
         height: 7px;
     }
 
-    .radio_ch {
+    .checkbox__input {
         width: 20px;
         height: 20px;
         display: flex;
@@ -249,17 +235,11 @@
         margin: 0px;
     }
 
-    .form_age {
+    .form__radio-group {
         max-width: 278px;
         width: 100%;
         margin-top: 3px;
         gap: 5px;
-    }
-
-    .age {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
     }
 
 }
@@ -372,22 +352,17 @@
         line-height: 142%;
     }
 
-    .form__in {
-
-        gap: 8px;
-    }
-
-    .ch_p {
+    .form__agreement-text {
         max-width: 248px;
         padding-left: 10px;
     }
 
-    .check__btn {
+    .form__agreement {
         max-width: 278px;
         margin-top: 2px;
     }
 
-    .control {
+    .form__radio-buttons {
         gap: 29px;
     }
 }

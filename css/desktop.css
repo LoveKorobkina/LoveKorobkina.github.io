@@ -38,7 +38,7 @@
         padding: 60px;
     }
 
-    .forms {
+    .form__input {
 
         width: 389px;
         height: 68px;
@@ -53,8 +53,7 @@
 
     }
 
-    .form__inline {
-
+    .form__row {
 
         width: 798px;
         height: 104px;
@@ -62,7 +61,7 @@
         gap: 20px;
     }
 
-    .forms_comment {
+    textarea {
 
         width: 798px;
         height: 152px;
@@ -70,32 +69,25 @@
         padding-right: 0px;
     }
 
-    .form__input {
+    .form__row {
 
         gap: 33px;
     }
 
-    .form_com {
-
-        padding-top: 0px;
-    }
-
-    .ch_p {
+    .form__agreement-text {
         padding-left: 10px;
         margin-top: 3px;
-    }
-
-}
-
-@media (max-width: 1030px) {
-    .ch_p {
         font-size: 16px;
         text-align: left;
         display: inline;
         max-width: 510px;
     }
 
-    .check__btn {
+}
+
+@media (max-width: 1030px) {
+
+    .form__agreement {
         align-items: flex-start;
     }
 }
