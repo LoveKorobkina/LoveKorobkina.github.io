@@ -96,10 +96,12 @@
 
 @media (max-width: 1240px) {
 
-    .card__rev {
+    .reviews__card {
 
-        width: 450px;
+        max-width: 450px;
         height: 841px;
+        width: 100%;
+       
     }
 
     .reviews__cards {
@@ -112,11 +114,6 @@
 /*Медиа запросы блока photo (Фото путешественников)*/
 
 @media (max-width: 1240px) {
-
-    .main__photos {
-        /* margin-right: 20px;
-        margin-left: 20px;*/
-    }
 
     .photos__traveler {
         gap: 30px;
@@ -170,8 +167,6 @@
     }
 
 }
-
-
 
 /*Блок footer*/
 

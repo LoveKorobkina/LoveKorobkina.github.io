@@ -30,14 +30,6 @@
     }
 }
 
-@media (max-width: 940px) {
-
-    h2 {
-        padding-top: 100px;
-    }
-
-}
-
 @media (max-width: 860px) {
 
     .header-container__menu-links {
@@ -184,7 +176,8 @@
         gap: 10px;
     }
 
-    .form__button-find,.form__button-reset {
+    .form__button-find,
+    .form__button-reset {
         width: 190px;
         height: 50px;
     }
@@ -196,34 +189,11 @@
 
 @media (max-width: 940px) {
 
-    .main__reviews {
-
-        display: flex;
-        flex-direction: column;
-        max-height: none;
-
-    }
-
     .h2_rev {
 
         font-size: 34px;
         font-weight: 700;
         padding-bottom: 20px;
-    }
-
-    .reviews__h2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 50px;
-    }
-
-    .reviews_p {
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-
     }
 
     .reviews__cards {
@@ -233,70 +203,36 @@
         padding-top: 0px;
     }
 
-    .card__rev {
+    .reviews__card {
 
         padding: 20px;
         border-radius: 20px;
 
     }
 
-    .card__pavel {
-        max-width: 450px;
-        width: 100%;
-        max-height: 700px;
-
-    }
-
-    .card__mary {
-
-        height: 500px;
-        max-width: 450px;
-        width: 100%;
-        align-items: center;
-    }
-
-    .text__pavel {
-
-        max-width: 380px;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 142%;
-    }
-
-    .text__mary {
-
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 142%;
-        max-width: 380px;
-    }
-
-    .name_rev {
-
+    .reviews__card-autor {
+        /*
         padding-top: 56px;
-        display: flex;
         max-width: 380px;
-        width: 100%;
+        width: 100%;*/
     }
 
-    .card_nprev {
+    .card__autor-info {
 
         gap: 8px;
     }
 
-    .name_p {
+    .autor-info__name {
 
         font-size: 23px;
         font-weight: 700;
-
+        line-height: 120%;
+        letter-spacing: 0.04em;
+        color: #1B1F2B;
     }
 
-    .p_rev {
-
-        text-align: start;
-        line-height: 142%;
+    .autor-info__text {
         font-size: 16px;
-        font-weight: 400;
     }
 
 
@@ -305,9 +241,6 @@
 /*Медиа запросы блока photo (Фото путешественников)*/
 
 @media (max-width: 940px) {
-
-    .main__photos {}
-
 
     .hide2 {
 
@@ -355,7 +288,6 @@
         max-width: 200px;
         max-height: 150px;
     }
-
 
     .photo_grid5 {
         gap: 10px;

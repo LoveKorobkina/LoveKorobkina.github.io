@@ -32,7 +32,7 @@
                 <div class="header-container__menu-links">
                     <a class="header-container__menu-link" href="#selectionAnchor">Туры</a>
                     <a class="header-container__menu-link" href="#formAnchor">Создать тур</a>
-                    <a class="header-container__menu-link" href="#reviewsanchor">Отзывы</a>
+                    <a class="header-container__menu-link" href="#reviewsAnchor">Отзывы</a>
                     <a class="header-container__menu-link" href="#hisanchor">Истории</a>
                 </div>
                 <a class="header-container__menu-link menu-link__number" href="tel:+7 999 999 99 99">+7 999 999 99
@@ -299,31 +299,31 @@
                 </form>
             </div>
         </section>
-        <div class="main__reviews section">
-            <div class="reviews__h2 title-wrapper">
-                <h2 id="reviewsanchor">Отзывы наших<br>путешественников</h2>
-                <p class="reviews_p header-text">Идейные соображения высшего порядка,<br>а также рамки и место обучения
+        <section class="tour-reviews section">
+            <div class="title-wrapper">
+                <h2 id="reviewsAnchor">Отзывы наших<br>путешественников</h2>
+                <p class="header-text">Идейные соображения высшего порядка,<br>а также рамки и место обучения
                     кадров
                 </p>
             </div>
             <div class="reviews__cards">
-                <div class="card__mary card__rev">
-                    <p class="text_rev text__mary">Идейные соображения высшего порядка, а также рамки и место
+                <div class="reviews__card_small reviews__card">
+                    <p class="reviews__card-text ">Идейные соображения высшего порядка, а также рамки и место
                         обучения кадров
                         обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные
                         соображения высшего порядка, а также начало повседневной работы по формированию позиции
                         позволяет оценить значение модели развития.</p>
-                    <div class="name_rev">
-                        <div class="card_nprev">
-                            <p class="name_p">Мария</p>
-                            <p class="p_rev">Тур: Вдали от дома</p>
+                    <div class="reviews__card-autor card__autor">
+                        <div class="card__autor-info autor__info">
+                            <h3 class="autor-info__name">Мария</h3>
+                            <p class="autor-info__text">Тур: Вдали от дома</p>
                         </div>
-                        <img class="icon_rev" src="../images/icons/avatarReviewMary.png" alt="icon mary" width="75"
+                        <img class="autor-info__icon" src="../images/icons/avatarReviewMary.png" alt="icon mary" width="75"
                             height="75">
                     </div>
                 </div>
-                <div class="card__rev card__pavel">
-                    <p class="text_rev text__pavel">Равным образом постоянный количественный рост и сфера нашей
+                <div class="reviews__card_high reviews__card">
+                    <p class="reviews__card-text">Равным образом постоянный количественный рост и сфера нашей
                         активности
                         играет важную роль в формировании системы обучения кадров, соответствует насущным
                         потребностям.<br>
@@ -333,17 +333,17 @@
                         предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в
                         значительной степени обуславливает создание модели развития.
                     </p>
-                    <div class="name_rev">
-                        <div class="card_nprev">
-                            <p class="name_p">Павел</p>
-                            <p class="p_rev">Тур: Путешествие в горы </p>
+                    <div class="name_rev reviews__card-autor">
+                        <div class="card__autor-info autor__info">
+                            <h3 class="autor-info__name">Павел</h3>
+                            <p class="autor-info__text">Тур: Путешествие в горы </p>
                         </div>
-                        <img class="icon_rev" src="../images/icons/avatarReviewPavel.png" alt="icon pavel" width="75"
+                        <img class="autor-info__icon" src="../images/icons/avatarReviewPavel.png" alt="icon" width="75"
                             height="75">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="main__photos">
             <div class="photos__h2 title-wrapper">
                 <h2 id="anchorphoto">Фотографии путешествий</h2>
@@ -490,7 +490,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <footer class="footer">
         <div class="footer_text">

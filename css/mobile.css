@@ -82,49 +82,39 @@
         max-width: 318px;
     }
 
-    .card__mary {
-        width: 318px;
-        height: 408px;
+    .reviews__card_small {
+        max-width: 318px;
+        width: 100%;
+        max-height: 408px;
+        height: 100%;
         padding-top: 23px;
     }
 
-    .text__mary {
+    .reviews__card-text {
         font-size: 16px;
         max-width: 277px;
+        font-weight: 700;
+        line-height: 142%;
+
     }
 
-    .reviews__cards {
-        align-items: center;
+    .reviews__card-autor {
+        /*padding: 0px;*/
     }
 
-    .name_rev {
-        padding: 0px;
-    }
-
-    .card_nprev {
+    .card__autor-info {
         gap: 12px;
         max-height: 59px;
         height: 100%;
         margin-top: 13px;
     }
 
-    .name_p {
-        font-size: 23px;
-        font-weight: 700;
-        line-height: 120%;
-        letter-spacing: 0.04em;
-        color: #1B1F2B;
-    }
-
-    .card__pavel {
+    .reviews__card_high {
         max-width: 318px;
         max-height: 592px;
         padding-top: 25px;
     }
 
-    .text__pavel {
-        font-size: 16px;
-    }
 }
 
 
@@ -184,7 +174,8 @@
         margin-top: 3px;
     }
 
-    .form__button-find,.form__button-reset {
+    .form__button-find,
+    .form__button-reset {
         width: 134px;
         height: 47px;
         margin-right: 10px;
