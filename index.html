@@ -33,7 +33,7 @@
                     <a class="header-container__menu-link" href="#selectionAnchor">Туры</a>
                     <a class="header-container__menu-link" href="#formAnchor">Создать тур</a>
                     <a class="header-container__menu-link" href="#reviewsAnchor">Отзывы</a>
-                    <a class="header-container__menu-link" href="#hisanchor">Истории</a>
+                    <a class="header-container__menu-link" href="#historyAnchor">Истории</a>
                 </div>
                 <a class="header-container__menu-link menu-link__number" href="tel:+7 999 999 99 99">+7 999 999 99
                     99</a>
@@ -318,8 +318,8 @@
                             <h3 class="autor-info__name">Мария</h3>
                             <p class="autor-info__text">Тур: Вдали от дома</p>
                         </div>
-                        <img class="autor-info__icon" src="../images/icons/avatarReviewMary.png" alt="icon mary" width="75"
-                            height="75">
+                        <img class="autor-info__icon" src="../images/icons/avatarReviewMary.png" alt="icon mary"
+                            width="75" height="75">
                     </div>
                 </div>
                 <div class="reviews__card_high reviews__card">
@@ -344,136 +344,162 @@
                 </div>
             </div>
         </section>
-        <div class="main__photos">
-            <div class="photos__h2 title-wrapper">
-                <h2 id="anchorphoto">Фотографии путешествий</h2>
-                <p class="p_photo header-text">Идейные соображения высшего порядка,<br>
+        <section class="tour-gallery">
+            <div class="title-wrapper">
+                <h2>Фотографии путешествий</h2>
+                <p class="header-text">Идейные соображения высшего порядка,<br>
                     а также рамки и место обучения кадров</p>
             </div>
-            <div class="photos__traveler">
-                <div class="photo_grid4">
-                    <img class="img_tr photo1" src="../images/photosTravelBlock/photoTravel1.png" alt="photo1">
-                    <img class="img_tr hide photo2" src="../images/photosTravelBlock/photoTravel2.png" alt="photo2">
-                    <img class="img_tr hide2 photo3" src="../images/photosTravelBlock/photoTravel3.png" alt="photo3">
-                    <img class="img_tr photo4" src="../images/photosTravelBlock/photoTravel4.png" alt="photo4">
+            <div class="tour-gallery__grid-container gallery__row">
+                <div class="gallery__row_4-items">
+                    <img class="gallery__image gallery__image_wide" src="../images/photosTravelBlock/photoTravel1.png"
+                        alt="photo1">
+                    <img class="gallery__image gallery__image_hide gallery__image_wide"
+                        src="../images/photosTravelBlock/photoTravel2.png" alt="photo2">
+                    <img class="gallery__image gallery__image_hide-next gallery__image_wide"
+                        src="../images/photosTravelBlock/photoTravel3.png" alt="photo3">
+                    <img class="gallery__image gallery__image_wide" src="../images/photosTravelBlock/photoTravel4.png"
+                        alt="photo4">
                 </div>
-                <div class="photo_grid5">
-                    <img class="img_tr photo5" src="../images/photosTravelBlock/photoTravel5.png" alt="photo5">
-                    <img class="img_tr hide2 photo6" src="../images/photosTravelBlock/photoTravel6.png" alt="photo6">
-                    <img class="img_tr hide photo7" src="../images/photosTravelBlock/photoTravel7.png" alt="photo7">
-                    <img class="img_tr photo8" src="../images/photosTravelBlock/photoTravel8.png" alt="photo8">
-                    <img class="img_tr photo13" src="../images/photosTravelBlock/photoTravel13.png" alt="photo13">
-
+                <div class="gallery__row_5-items">
+                    <img class="gallery__image gallery__image_narrow" src="../images/photosTravelBlock/photoTravel5.png"
+                        alt="photo5">
+                    <img class="gallery__image gallery__image_hide-next gallery__image_narrow"
+                        src="../images/photosTravelBlock/photoTravel6.png" alt="photo6">
+                    <img class="gallery__image gallery__image_hide gallery__image_narrow"
+                        src="../images/photosTravelBlock/photoTravel7.png" alt="photo7">
+                    <img class="gallery__image gallery__image_narrow" src="../images/photosTravelBlock/photoTravel8.png"
+                        alt="photo8">
+                    <img class="gallery__image gallery__image_narrow"
+                        src="../images/photosTravelBlock/photoTravel13.png" alt="photo13">
                 </div>
-                <div class="photo_grid4 ph4">
-                    <img class="img_tr photo9" src="../images/photosTravelBlock/photoTravel9.png" alt="photo9">
-                    <img class="img_tr photo10" src="../images/photosTravelBlock/photoTravel10.png" alt="photo10">
-                    <img class="img_tr hide2 photo11" src="../images/photosTravelBlock/photoTravel11.png" alt="photo11">
-                    <img class="img_tr hide photo12" src="../images/photosTravelBlock/photoTravel12.png" alt="photo12">
-
+                <div class="gallery__row_4-items gallery__row_narrow">
+                    <img class="gallery__image gallery__image_wide" src="../images/photosTravelBlock/photoTravel9.png"
+                        alt="photo9">
+                    <img class="gallery__image gallery__image_wide" src="../images/photosTravelBlock/photoTravel10.png"
+                        alt="photo10">
+                    <img class="gallery__image gallery__image_hide-next gallery__image_wide"
+                        src="../images/photosTravelBlock/photoTravel11.png" alt="photo11">
+                    <img class="gallery__image gallery__image_hide gallery__image_wide"
+                        src="../images/photosTravelBlock/photoTravel12.png" alt="photo12">
                 </div>
             </div>
-        </div>
-        <div class="main__history section">
-            <div class="history__h2 title-wrapper">
-                <h2 class="h2_hisanchor" id="hisanchor">Истории путешествий</h2>
-                <p class="p_history header-text">Идейные соображения высшего порядка,<br>
+        </section>
+        <section class="tour-history section">
+            <div class="title-wrapper">
+                <h2 id="historyAnchor">Истории путешествий</h2>
+                <p class="header-text">Идейные соображения высшего порядка,<br>
                     а также рамки и место обучения кадров</p>
             </div>
-            <div class="his_cards section">
-                <div class="card_hover card_his history_img1">
-                    <div class="linear-gradient_his">
-                        <div class="cardhis_text">
-                            <h3 class="his_h3">Автостопом в Стамбул</h3>
-                            <p class="history_text">
+            <div class="tour-history__cards">
+                <div class="tour-history__card">
+                    <div class="tour-history__image-wrapper">
+                        <img src="/images/photosStoriesBlock/photoStories1.jpg" alt="photoStories"
+                            class="tour-history__image">
+                    </div>
+                    <div class="tour-history__card-info">
+                        <div class="tour-history__text-wrapper">
+                            <h3>Автостопом в Стамбул</h3>
+                            <p class="tour-history__text">
                                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
                                 обеспечивает
-                                широкому кругу (специалистов) участие в формировании новых предложений:</p>
-                            <div class="card_list">
-                                <ul class="clist_ul">
+                                широкому кругу (специалистов) участие в формировании новых предложений:
+                            </p>
+                            <div class="tour-history__menu-list menu__list">
+                                <ul class="menu__list-items">
                                     <li>вкусная еда</li>
                                     <li>дешевый транспорт</li>
                                     <li>красивый город.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="history_link">
-                            <div class="link_more">
-                                <a class="card_linkhis linhis">Подробнее
-                                    <svg class="card_icon" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                        <div class="tour-history__link-container">
+                            <div class="tour-history__link-more-wrapper">
+                                <a class="link-more">Подробнее
+                                    <svg class="link-more__card-icon" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
                                             fill="white" />
                                     </svg>
                                 </a>
                             </div>
-                            <div class="link_socialm">
-                                <a class="link_his">telegram</a>
-                                <a class="link_his">facebook</a>
-                                <a class="link_his">YouTube</a>
+                            <div class="tour-history__links-social">
+                                <a class="tour-history__link-social">telegram</a>
+                                <a class="tour-history__link-social">facebook</a>
+                                <a class="tour-history__link-social">YouTube</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card_hover card_his history_img2">
-                    <div class="linear-gradient_his">
-                        <div class="cardhis_text">
-                            <h3 class="his_h3">Автостопом в Стамбул</h3>
-                            <p class="history_text hist2">
+                <div class="tour-history__card">
+                    <div class="tour-history__image-wrapper">
+                        <img src="../images/photosStoriesBlock/photoStories2.jpg" alt="photoStories"
+                            class="tour-history__image">
+                    </div>
+                    <div class="tour-history__card-info">
+                        <div class="tour-history__text-wrapper">
+                            <h3>Автостопом в Стамбул</h3>
+                            <p class="tour-history__text">
                                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
                                 обеспечивает
-                                широкому кругу (специалистов) участие в формировании новых предложений.</p>
+                                широкому кругу (специалистов) участие в формировании новых предложений.
+                            </p>
                         </div>
-                        <div class="history_link">
-                            <div class="link_more">
-                                <a class="card_linkhis linhis">Подробнее
-                                    <svg class="card_icon" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                        <div class="tour-history__link-container">
+                            <div class="tour-history__link-more-wrapper">
+                                <a class="link-more">Подробнее
+                                    <svg class="link-more__card-icon" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
                                             fill="white" />
                                     </svg>
                                 </a>
                             </div>
-                            <div class="link_socialm">
-                                <a class="link_his">telegram</a>
-                                <a class="link_his">facebook</a>
-                                <a class="link_his">ВКонтакте</a>
+                            <div class="tour-history__links-social">
+                                <a class="tour-history__link-social">telegram</a>
+                                <a class="tour-history__link-social">facebook</a>
+                                <a class="tour-history__link-social">ВКонтакте</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card_hover card_his history_img3">
-                    <div class="linear-gradient_his">
-                        <div class="cardhis_text his_p">
-                            <h3 class="his_h3">Автостопом в Стамбул</h3>
-                            <p class="history_text hist2">
+                <div class="tour-history__card">
+                    <div class="tour-history__image-wrapper">
+                        <img src="../images/photosStoriesBlock/photoStories3.jpg" alt="photoStories"
+                            class="tour-history__image">
+                    </div>
+                    <div class="tour-history__card-info">
+                        <div class="tour-history__text-wrapper">
+                            <h3>Автостопом в Стамбул</h3>
+                            <p class="tour-history__text">
                                 Идейные соображения высшего порядка, а также рамки и место обучения кадров
                                 обеспечивает
-                                широкому кругу (специалистов) участие в формировании новых предложений.</p>
+                                широкому кругу (специалистов) участие в формировании новых предложений.
+                            </p>
                         </div>
-                        <div class="history_link">
-                            <div class="link_more">
-                                <a class="card_linkhis linhis">Подробнее
-                                    <svg class="card_icon" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                        <div class="tour-history__link-container">
+                            <div class="tour-history__link-more-wrapper">
+                                <a class="link-more">Подробнее
+                                    <svg class="link-more__card-icon" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
                                             fill="white" />
                                     </svg>
                                 </a>
                             </div>
-                            <div class="link_socialm">
-                                <a class="link_his">telegram</a>
-                                <a class="link_his">facebook</a>
-                                <a class="link_his">ВКонтакте</a>
+                            <div class="tour-history__links-social">
+                                <a class="tour-history__link-social">telegram</a>
+                                <a class="tour-history__link-social">facebook</a>
+                                <a class="tour-history__link-social">ВКонтакте</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="main__conclusion section">
             <div class="conclusion_elements">
                 <div class="con_img">

@@ -153,15 +153,6 @@
         line-height: 142%;
     }
 
-    .header-text {
-
-        line-height: 142%;
-        font-size: 16px;
-        font-weight: 400;
-        max-width: 318px;
-
-    }
-
     .tour-create__header {
 
         padding-bottom: 40px;
@@ -327,7 +318,7 @@
 
     }
 
-    .card_icon {
+    .link-more__card-icon {
         margin-top: -3px;
     }
 
@@ -364,52 +355,28 @@
 
 @media (max-width: 500px) {
 
-    .p_photo {
-        margin-top: -3px;
-        max-width: 318px;
-    }
-
-    .photos__traveler {
-        max-width: 320px;
-    }
-
-    .photo_grid4 {
+    .gallery__row_4-items {
         gap: 13px;
     }
 
-    .photo1 {
-        width: 150px;
-        height: 110px;
+.gallery__image {
+    height: 110px;
+    border-radius: 20px;
+
+}
+
+    .gallery__row_narrow {
+        gap: 10px;
     }
 
-    .photo4 {
-        width: 150px;
-        height: 110px;
+    .gallery__image_narrow {
+        max-width: 99px;
+        width: 100%;
     }
 
-    .photo5 {
-        width: 99px;
-        height: 110px;
-    }
-
-    .photo8 {
-        width: 99px;
-        height: 110px;
-    }
-
-    .photo13 {
-        width: 99px;
-        height: 110px;
-    }
-
-    .photo9 {
-        width: 154px;
-        height: 110px;
-    }
-
-    .photo10 {
-        width: 154px;
-        height: 110px;
+    .gallery__image_wide {
+        max-width: 150px;
+        width: 100%;
     }
 }
 
@@ -417,56 +384,32 @@
 
 @media (max-width: 500px) {
 
-    .h2_hisanchor {
-        padding-top: 75px;
-        padding-bottom: 20px;
-    }
-
-    .card_his {
+    .tour-history__card {
         max-width: 318px;
         max-height: 455px;
         border-radius: 20px;
     }
 
-    .card_his:hover {
-        background-size: 310%;
-    }
+    /*.tour-history__card:hover {
+       
+    }*/
 
-    .history__h2 {
-        max-width: 318px;
-        margin-top: -3px;
-    }
-
-    .linear-gradient_his {
-        padding: 0px;
-    }
-
-    .cardhis_text {
+    .tour-history__card-text {
         padding: 30px 0px 0px 30px;
-        max-height: 230px;
-
+        
     }
 
-    .his_h3 {
-        max-width: 150px;
-    }
-
-    .history_text {
-        font-size: 16px;
-        padding-top: 22px;
-    }
-
-    .history_link {
+    .tour-history__link-container {
         padding-top: 0px;
         margin-left: 30px;
         margin-bottom: 22px;
     }
 
-    .card_list {
-        font-size: 15px;
+    .tour-history__menu-list {
+        font-size: 16px;
     }
 
-    .clist_ul {
+    .menu__list-items {
         display: flex;
         flex-direction: column;
         letter-spacing: 0.02em;
@@ -475,11 +418,11 @@
 
     }
 
-    .linhis {
+    .link-more {
         padding-left: 20px;
     }
 
-    .linhis:active {
+    .link-more:active {
         border-radius: 50px;
         padding: 7px 20px 7px 20px;
         background-color: #EFA501;

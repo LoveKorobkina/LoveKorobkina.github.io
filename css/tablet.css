@@ -2,6 +2,10 @@
 
 @media (max-width: 960px) {
 
+    .main {
+        gap: 75px;
+    }
+
     .header-container__menu {
         max-width: 910px;
         width: 100%;
@@ -169,7 +173,10 @@
     }
 
     .header-text {
+        line-height: 142%;
         font-size: 16px;
+        font-weight: 400;
+        max-width: 318px;
     }
 
     .form__buttons {
@@ -242,7 +249,7 @@
 
 @media (max-width: 940px) {
 
-    .hide2 {
+    .gallery__image_hide-next {
 
         display: none;
     }
@@ -255,75 +262,39 @@
         padding: 0px;
     }
 
-    .p_photo {
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-    }
-
-    .photos__traveler {
+    .tour-gallery__grid-container {
         gap: 18px;
         padding-top: 50px;
     }
 
-    .photo_grid4 .img_tr.photo9 {
-        max-width: 200px;
-        max-height: 150px;
-    }
-
-    .photo10 {
-        max-width: 154px;
-    }
-
-    .photo_grid4 {
-        gap: 18px;
+    .gallery__row_4-items {
+        gap: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        
     }
 
-    .photo_grid4 .img_tr {
-
-        max-width: 200px;
-        max-height: 150px;
-    }
-
-    .photo_grid5 {
+    .gallery__row_5-items {
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
     }
 
-    .img_tr {
+   /* .gallery__image_wide {
+        max-width: 314px;
+        width: 100%;
+    }*/
 
-        border-radius: 20px;
-    }
+   /* .gallery__image_narrow {
+        max-width: 231px;
+        width: 100%;
+    }*/
 
-    .photo1 {
-        max-width: 200px;
-        max-height: 150px;
-    }
+    .gallery__image {
 
-    .photo4 {
-        max-width: 200px;
-        max-height: 150px;
-    }
-
-    .photo5 {
-        max-width: 130px;
-        max-height: 150px;
-    }
-
-    .photo8 {
-        max-width: 130px;
-        max-height: 150px;
-    }
-
-    .photo13 {
-        max-width: 130px;
-        max-height: 150px;
+        border-radius: 50px;
     }
 
 }
@@ -332,43 +303,40 @@
 
 @media (max-width: 960px) {
 
-    .history__h2 {
-        padding-bottom: 50px;
-    }
 
-    .card_icon {
+    .link-more__card-icon {
         margin-top: 0px;
     }
 
-    .his_cards {
+    .tour-history__cards {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    .card_his {
+    .tour-history__card {
         display: flex;
         flex-direction: column;
         max-width: 450px;
         max-height: 500px;
-        background-size: cover;
+        
 
     }
 
-    .card_his:hover {
+    /*.tour-history__card:hover {
         background-size: 270% auto;
         background-position: center;
         background-repeat: no-repeat;
         transition: background-size 300ms ease;
         overflow: hidden;
-    }
+    }*/
 
-    .linear-gradient_his {
+   /* .tour-history__card-info linear-gradient_his {
         padding: 30px;
         border-radius: 20px;
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     .h2_history {
         font-weight: 700;
@@ -376,50 +344,22 @@
         line-height: 112%;
     }
 
-    .p_history {
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-        max-width: 319px;
-    }
-
-    .his_h3 {
-
-        padding-bottom: 0px;
-
-    }
-
-    .cardhis_text {
+    .tour-history__card-text {
 
         height: 100%;
         max-height: 230px;
     }
 
-    .link_socialm {
-
+    .tour-history__links-social {
         display: none;
-
     }
 
-    .history_text {
-
-        font-size: 14px;
-        padding-top: 20px;
-    }
-
-    .card_list {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-    }
-
-    .history_link {
+    .tour-history__link-container {
 
         padding-top: 63px;
     }
 
-    .linhis {
+    .link-more {
 
         align-items: center;
         padding: 7px 20px 7px 20px;

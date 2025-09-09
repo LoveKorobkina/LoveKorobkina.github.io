@@ -115,42 +115,24 @@
 
 @media (max-width: 1240px) {
 
-    .photos__traveler {
-        gap: 30px;
-        max-width: 990px;
-    }
-
-    .hide {
+    .gallery__image_hide {
 
         display: none;
     }
 
-    .photo_grid4 .img {
-
-        max-width: 314px;
-
-    }
-
-    .photo_grid4 {
+    .gallery__row_4-items {
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    .photo_grid5 {
+    .gallery__row_5-items {
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-
-    .photo_grid5 .img {
-
-        max-width: 231px;
-
-    }
-
 
 }
 
@@ -158,12 +140,12 @@
 
 @media (max-width: 1240px) {
 
-    .card_his {
+    .tour-history__card {
 
         width: 918px;
         height: 567px;
         overflow: hidden;
-        background-size: 130% auto;
+       
     }
 
 }
