@@ -77,11 +77,6 @@
 
 @media (max-width: 500px) {
 
-    .reviews_p {
-        margin-top: -6px;
-        max-width: 318px;
-    }
-
     .reviews__card_small {
         max-width: 318px;
         width: 100%;
@@ -96,10 +91,6 @@
         font-weight: 700;
         line-height: 142%;
 
-    }
-
-    .reviews__card-autor {
-        /*padding: 0px;*/
     }
 
     .card__autor-info {
@@ -349,8 +340,6 @@
     }
 }
 
-
-
 /*Медиа запросы блока photo (Фото путешественников)*/
 
 @media (max-width: 500px) {
@@ -359,11 +348,11 @@
         gap: 13px;
     }
 
-.gallery__image {
-    height: 110px;
-    border-radius: 20px;
+    .gallery__image {
+        height: 110px;
+        border-radius: 20px;
 
-}
+    }
 
     .gallery__row_narrow {
         gap: 10px;
@@ -390,13 +379,9 @@
         border-radius: 20px;
     }
 
-    /*.tour-history__card:hover {
-       
-    }*/
-
     .tour-history__card-text {
         padding: 30px 0px 0px 30px;
-        
+
     }
 
     .tour-history__link-container {
@@ -429,34 +414,26 @@
     }
 }
 
-
 /*Блок conclusion Заключение*/
 
 @media (max-width: 500px) {
 
-    .img_con {
+    .tour-contacts__photo {
         max-width: 130px;
         height: 133px;
     }
 
-    .con_h3 {
-        max-width: 291px;
-    }
-
-    .con_text {
-        gap: 21px;
-    }
 }
 
 /*Блок Подвал */
 
 @media (max-width: 500px) {
 
-    .foot_links {
+    .footer__links {
         gap: 10px;
     }
 
-    .foot_t {
+    .footer-wrapper {
         gap: 10px;
     }
 

@@ -46,13 +46,6 @@
 
     }
 
-    .form_in {
-
-        width: 389px;
-        height: 104px;
-
-    }
-
     .form__row {
 
         width: 798px;
@@ -83,30 +76,8 @@
         max-width: 510px;
     }
 
-}
-
-@media (max-width: 1030px) {
-
     .form__agreement {
         align-items: flex-start;
-    }
-}
-
-/*Медиа запросы блока reviews(Отзывы)*/
-
-@media (max-width: 1240px) {
-
-    .reviews__card {
-
-        max-width: 450px;
-        height: 841px;
-        width: 100%;
-       
-    }
-
-    .reviews__cards {
-
-        gap: 18px;
     }
 
 }
@@ -145,16 +116,7 @@
         width: 918px;
         height: 567px;
         overflow: hidden;
-       
+
     }
 
-}
-
-/*Блок footer*/
-
-@media (max-width: 1240px) {
-
-    .foot_t {
-        gap: 288px;
-    }
 }

@@ -456,15 +456,6 @@ select:has(.select-option:checked) {
 }
 
 
-/*input:invalid{
-    border: 2px solid red;
-}
-
-input:valid {
-    border: 2px solid #A6A6A6;
-} После JS доработать. 
- */
-
 .form__flcol {
 
     display: flex;
@@ -534,13 +525,6 @@ select {
     right: 21px;
 }
 
-.create__rbtn {
-
-    display: flex;
-    align-items: center;
-    gap: 61px;
-
-}
 
 .form__radio-group {
 
@@ -548,14 +532,6 @@ select {
     display: flex;
     flex-direction: column;
     margin-top: -1px;
-}
-
-.in_rad {
-
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    gap: 11px;
 }
 
 
@@ -686,13 +662,6 @@ select {
 
 .form__button-reset:active {
     background-color: #D9DFDB;
-}
-
-.in_check {
-
-    width: 26px;
-    height: 26px;
-
 }
 
 option {
@@ -1032,7 +1001,7 @@ li {
 
 /*Блок conclusion (заключение) */
 
-.conclusion_elements {
+.tour-contacts__container {
 
     display: flex;
     justify-content: space-around;
@@ -1041,57 +1010,41 @@ li {
     gap: 30px;
 }
 
-.img_con {
+.tour-contacts__photo {
     display: flex;
     border-radius: 50px;
 }
 
 
-.con_text {
+.tour-contacts__text {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 20px;
+    
 }
 
-.con_h3 {
-
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 122%;
-    color: #1B1F2B;
-}
-
-.h3_con {
-    padding: 0px;
-}
-
-.con_p {
-
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
-    color: #A6A6A6;
-}
-
-.p_con {
-
-    text-align: left;
-}
-
-.con_link {
+.contact__title--black {
 
     color: #1B1F2B;
 }
 
-/*hover conclusion*/
 
-.con_link:hover {
+.contact__link--black {
+
+    color: #1B1F2B;
+}
+
+.tour-contacts {
+    padding-bottom: 135px;
+}
+
+.contact__link--black:hover {
 
     text-decoration: underline;
     cursor: pointer;
 }
 
-.con_link:active {
+.contact__link--black:active {
 
     color: #286562;
     text-decoration: underline;
@@ -1099,7 +1052,7 @@ li {
 
 /*Блок footer(подвал)*/
 
-.footer_text {
+.footer {
 
     height: 88px;
     background-color: #F4F0E9;
@@ -1110,26 +1063,21 @@ li {
 
 }
 
-.p_foot {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
-    color: #A6A6A6;
-}
-
-.foot_soc {
+.footer__link-social {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #1B1F2B;
 
 }
 
-.foot_link:hover {
+.footer__links-container:hover {
     text-decoration: underline;
     cursor: pointer;
+
 }
 
-.foot_links {
+.footer__links {
     display: inline-flex;
     max-width: 408px;
     max-height: 28px;
@@ -1139,20 +1087,15 @@ li {
     line-height: 142%;
 }
 
-.foot_soc:active {
+.footer__link-social:active {
 
     color: #EFA501;
     text-decoration: underline;
 }
 
-.foot_t {
+.footer-wrapper {
     display: inline-flex;
     justify-content: space-around;
-    gap: 540px;
-}
-
-.foot_soc {
-
-    color: #1B1F2B;
-
+    width: 100%;
+    align-items: center;
 }

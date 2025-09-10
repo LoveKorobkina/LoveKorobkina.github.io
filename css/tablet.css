@@ -196,34 +196,6 @@
 
 @media (max-width: 940px) {
 
-    .h2_rev {
-
-        font-size: 34px;
-        font-weight: 700;
-        padding-bottom: 20px;
-    }
-
-    .reviews__cards {
-
-        display: flex;
-        flex-direction: column;
-        padding-top: 0px;
-    }
-
-    .reviews__card {
-
-        padding: 20px;
-        border-radius: 20px;
-
-    }
-
-    .reviews__card-autor {
-        /*
-        padding-top: 56px;
-        max-width: 380px;
-        width: 100%;*/
-    }
-
     .card__autor-info {
 
         gap: 8px;
@@ -254,14 +226,6 @@
         display: none;
     }
 
-    .h2_photo {
-
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 112%;
-        padding: 0px;
-    }
-
     .tour-gallery__grid-container {
         gap: 18px;
         padding-top: 50px;
@@ -272,7 +236,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        
     }
 
     .gallery__row_5-items {
@@ -281,16 +244,6 @@
         grid-template-columns: repeat(3, 1fr);
 
     }
-
-   /* .gallery__image_wide {
-        max-width: 314px;
-        width: 100%;
-    }*/
-
-   /* .gallery__image_narrow {
-        max-width: 231px;
-        width: 100%;
-    }*/
 
     .gallery__image {
 
@@ -302,7 +255,6 @@
 /*Блок history(истории путешественников)*/
 
 @media (max-width: 960px) {
-
 
     .link-more__card-icon {
         margin-top: 0px;
@@ -319,29 +271,6 @@
         flex-direction: column;
         max-width: 450px;
         max-height: 500px;
-        
-
-    }
-
-    /*.tour-history__card:hover {
-        background-size: 270% auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: background-size 300ms ease;
-        overflow: hidden;
-    }*/
-
-   /* .tour-history__card-info linear-gradient_his {
-        padding: 30px;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-    } */
-
-    .h2_history {
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 112%;
     }
 
     .tour-history__card-text {
@@ -379,45 +308,21 @@
 
 @media (max-width: 960px) {
 
-    .main__conclusion {
-        padding-bottom: 75px;
-        padding-top: 75px;
-    }
-
-    .conclusion_elements {
+    .tour-contacts__container {
 
         display: flex;
         flex-direction: column;
-        gap: 30px;
+
     }
 
-    .img_con {
+    .tour-contacts__photo {
 
         border-radius: 20px;
         max-width: 230px;
     }
 
-    .con_text {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .con_h3 {
-
-        text-align: center;
-    }
-
-    .h3_con {
-        max-width: 450px;
-    }
-
-    .p_con {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-        text-align: center;
+    .tour-contacts {
+        padding-bottom: 75px;
     }
 
 }
@@ -426,40 +331,32 @@
 
 @media (max-width: 960px) {
 
-    .footer_text {
+    .footer {
 
         display: flex;
         flex-direction: column;
 
     }
 
-    .p_foot {
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
-    }
-
-    .foot_links {
+    .footer__links {
         font-size: 16px;
         font-weight: 400;
         line-height: 142%;
         gap: 15px;
     }
 
-    .foot_link {
-
+    .footer__link-social {
         gap: 5px;
     }
 
-    .foot_t {
+    .footer-wrapper {
         gap: 7px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .footer_text {
+    .footer {
         height: 98px;
     }
 }
