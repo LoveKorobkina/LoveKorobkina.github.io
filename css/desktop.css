@@ -1,4 +1,3 @@
-/*Медиа запросы блока header*/
 
 @media (max-width: 1240px) {
 
@@ -12,10 +11,7 @@
     }
 }
 
-/*Медиа запросы блока Выбери тур create*/
-
 @media (max-width: 1240px) {
-
     .tour-selection__cards {
         display: flex;
         justify-content: center;
@@ -24,30 +20,23 @@
 
     .tour-selection__card {
         max-width: 450px;
-
     }
 }
-
-/*Блок собери свой тур*/
 
 @media (max-width: 1240px) {
 
     .tour-create__form-wrapper {
-
         max-width: 918px;
         padding: 60px;
     }
 
     .form__input {
-
         width: 389px;
         height: 68px;
         margin-right: 0px;
-
     }
 
     .form__row {
-
         width: 798px;
         height: 104px;
         margin-right: 0px;
@@ -55,7 +44,6 @@
     }
 
     textarea {
-
         width: 798px;
         height: 152px;
         margin-right: 0px;
@@ -63,7 +51,6 @@
     }
 
     .form__row {
-
         gap: 33px;
     }
 
@@ -79,44 +66,31 @@
     .form__agreement {
         align-items: flex-start;
     }
-
 }
-
-/*Медиа запросы блока photo (Фото путешественников)*/
 
 @media (max-width: 1240px) {
 
     .gallery__image_hide {
-
         display: none;
     }
 
     .gallery__row_4-items {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
     .gallery__row_5-items {
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-
 }
 
-/*Блок history (Истории путешествий)*/
-
 @media (max-width: 1240px) {
-
     .tour-history__card {
-
         width: 918px;
         height: 567px;
         overflow: hidden;
-
     }
-
 }

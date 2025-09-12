@@ -8,6 +8,11 @@ body {
 
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: local("../Projects/YourTour/fonts/static");
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,7 +31,6 @@ a {
     flex-direction: column;
     max-width: 1170px;
     width: 100%;
-
 }
 
 .title-wrapper {
@@ -37,9 +41,34 @@ a {
     padding-bottom: 100px;
 }
 
-/*------------------------------------------------------------------------------------------------*/
+:root {
+    --font-size-title-big: 59px;
+    --font-size-title-small: 35px;
 
-/*Шапка сайта header*/
+    --font-size-text-big: 23px;
+    --font-size-text-normal: 20px;
+    --font-size-text-small: 17px;
+
+    --font-weight-bold: 700;
+    --font-weight-semibold: 500;
+    --font-weight-normal: 400;
+
+    --line-height-big: 142%;
+    --line-height-small: 122%;
+
+    --color-orange-200: #EFA501;
+    --color-orange-100: #F8E6BE;
+    --color-green-400: #286562;
+    --color-green-300: #3B7E7B;
+    --color-green-200: #627F7E;
+    --color-green-100: #E0F0E5;
+    --color-gray-300: #A6A6A6;
+    --color-gray-200: #D9DFDB;
+    --color-gray-100: #F1F3F2;
+    --color-beige-200: #F4F0E9;
+    --color-beige-100: #F9F7F4;
+
+}
 
 .header {
     display: flex;
@@ -50,11 +79,9 @@ a {
     background-size: cover;
     background-position: center;
     scroll-behavior: smooth;
-
 }
 
 .header-container {
-
     display: flex;
     flex-direction: column;
     max-width: 1168px;
@@ -63,7 +90,6 @@ a {
 }
 
 .header-container__menu {
-
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -75,21 +101,18 @@ a {
 }
 
 .header-container__logo_dark {
-
     display: none;
 }
 
 .header-container__menu-links {
-
     display: inline-flex;
     gap: 50px;
-
 }
 
 .header-container__menu-link {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
 }
 
 .header-container__menu-link:hover {
@@ -98,14 +121,12 @@ a {
 }
 
 .header-container__title-text {
-
     display: flex;
     flex-direction: column;
     color: white;
     max-width: 768px;
     align-items: center;
     gap: 49px;
-
 }
 
 h1 {
@@ -113,7 +134,7 @@ h1 {
     text-align: center;
     margin: auto;
     line-height: 110%;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: 2px;
 }
 
@@ -125,21 +146,18 @@ h1 {
     background-color: white;
     color: #1B1F2B;
     font-size: 16px;
-    line-height: 142%;
-    font-weight: 400;
+    line-height: var(--line-height-big);
+    font-weight: var(--font-weight-normal);
     border: none;
-
 }
 
 .header-container__button:active {
-
-    background-color: #F8E6BE;
+    background-color: var(--color-orange-100);
     color: black;
 }
 
 .header-container__button:hover {
-
-    background-color: #EFA501;
+    background-color: var(--color-orange-200);
     color: white;
     cursor: pointer;
 }
@@ -149,17 +167,17 @@ h1 {
     text-align: center;
     margin: 0;
     max-width: 418px;
-    color: #A6A6A6;
-    font-size: 20px;
-    line-height: 142%;
-    font-weight: 400;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-text-normal);
+    line-height: var(--line-height-big);
+    font-weight: var(--font-weight-normal);
 }
 
 .title-text_white {
     color: #FFFFFF;
-    font-size: 20px;
-    line-height: 142%;
-    font-weight: 400;
+    font-size: var(--font-size-text-normal);
+    line-height: var(--line-height-big);
+    font-weight: var(--font-weight-normal);
     max-width: 562px;
     max-height: 56px;
     text-align: center;
@@ -167,14 +185,11 @@ h1 {
 }
 
 .header-container__title {
-
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 119px 0px 119px 0px;
 }
-
-/* Main - основное содержимое сайта */
 
 .main {
     display: flex;
@@ -182,19 +197,14 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background-color: #F9F7F4;
+    background-color: var(--color-beige-100);
     gap: 135px;
 }
 
-/*-----------------------------------------------------------------------------------------------------------*/
-
-/* Блок выбери тур tour-selection*/
-
 h2 {
-
     color: black;
-    font-size: 59px;
-    font-weight: 700;
+    font-size: var(--font-size-title-big);
+    font-weight: var(--font-weight-bold);
     margin: 0;
     text-align: center;
     line-height: 124%;
@@ -206,25 +216,21 @@ h2 {
 }
 
 .tour-selection__link {
-
     color: #1B1F2B;
-    font-weight: 700;
-    font-size: 23px;
-
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-text-big);
 }
 
 .tour-selection__link--orange {
-
-    color: #EFA501;
-    border-bottom: 2px solid #EFA501;
-    font-size: 23px;
-    font-weight: 700;
+    color: var(--color-orange-200);
+    border-bottom: 2px solid var(--color-orange-200);
+    font-size: var(--font-size-text-big);
+    font-weight: var(--font-weight-bold);
     padding-bottom: 6px;
     margin-top: 6px;
 }
 
 .tour-selection__links {
-
     display: flex;
     gap: 31px;
     flex-wrap: wrap;
@@ -233,73 +239,61 @@ h2 {
 }
 
 .tour-selection {
-
     padding-left: 0px;
     padding-right: 0px;
-
 }
 
 @media (min-width: 501px) {
-
     .tour-selection__link:hover {
         border-bottom: 2px solid #1B1F2B;
         text-decoration: none;
         padding-bottom: 6px;
         margin-top: 6px;
         cursor: pointer;
-
     }
 
     .tour-selection__link--orange:hover {
         text-decoration: none;
-        color: #EFA501;
-        border-bottom: 2px solid #EFA501;
+        color: var(--color-orange-200);
+        border-bottom: 2px solid var(--color-orange-200);
         padding-bottom: 6px;
         margin-top: 6px;
         cursor: pointer;
     }
 
     .tour-selection__card:hover .tour-selection__image {
-
         cursor: pointer;
         transform: scale(1.2);
-
     }
 
     .tour-selection__card:hover .tour-selection__card-icon {
-        background-color: #286562;
+        background-color: var(--color-green-400);
         border-radius: 50px;
         cursor: pointer;
     }
 
     .tour-selection__card-icon:hover {
-
-        background-color: #286562;
+        background-color: var(--color-green-400);
         border-radius: 50px;
         cursor: pointer;
     }
 
     .tour-selection__card:active .tour-selection__card-icon {
-
-        background-color: #EFA501;
+        background-color: var(--color-orange-200);
         border-radius: 50px;
     }
 
 }
 
 .tour-selection__cards {
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     max-width: 1170px;
     gap: 30px;
-
-
 }
 
 .tour-selection__card {
-
     max-width: 370px;
     height: 531px;
     border-radius: 50px;
@@ -309,21 +303,18 @@ h2 {
     position: relative;
     display: flex;
     cursor: pointer;
-
 }
 
 .tour-selection__image {
     transition: 300ms ease;
     overflow: hidden;
     display: block;
-
 }
 
 h3 {
-
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-title-small);
+    line-height: var(--line-height-small);
     margin: 0;
 }
 
@@ -356,18 +347,15 @@ h3 {
     pointer-events: none;
 }
 
-
 .tour-selection__card-text {
     padding: 50px 50px 0px 50px;
-
 }
 
 .card-price {
-
-    font-weight: 400;
-    font-size: 17px;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-text-small);
     color: white;
-    line-height: 142%;
+    line-height: var(--line-height-big);
     text-align: left;
     margin-top: 16px;
 }
@@ -377,25 +365,19 @@ h3 {
 }
 
 .tour-selection__card-icon {
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 122%;
+    font-size: var(--font-size-text-big);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-small);
     width: 199px;
     display: flex;
     align-items: center;
     padding: 7px 20px;
-
+    gap: 15px;
 }
 
 .link-more__card-icon {
-
-    margin-left: 15px;
     margin-top: -2px;
 }
-
-/*------------------------------------------------------------------------------*/
-
-/* Блок Собери свой тур*/
 
 form {
     display: flex;
@@ -404,47 +386,41 @@ form {
 }
 
 .tour-create__form-wrapper {
-
     display: flex;
     background-color: #FFFFFF;
     border-radius: 50px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
     padding: 70px;
     max-width: 1170px;
-
 }
 
 .form__input {
-
     width: 500px;
     height: 68px;
     border-radius: 10px;
-    border: 1px solid #F4F0E9;
-    background-color: #F9F7F4;
+    border: 1px solid var(--color-beige-200);
+    background-color: var(--color-beige-100);
     padding: 15px 20px 20px 20px;
     font-family: "Roboto";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
-
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
 }
 
 .form__input::placeholder {
-
-    color: #A6A6A6;
+    color: var(--color-gray-300);
 }
 
 .form__input:focus {
     border-width: 2px;
     outline: none;
-    border-color: #A6A6A6;
-
+    border-color: var(--color-gray-300);
 }
 
 select {
-    color: #A6A6A6;
+    color: var(--color-gray-300);
 }
 
 select option {
@@ -455,57 +431,45 @@ select:has(.select-option:checked) {
     color: #1B1F2B;
 }
 
-
-.form__flcol {
-
-    display: flex;
-    flex-direction: column;
-}
-
 .form__row {
-
     display: inline-flex;
     gap: 30px;
-
 }
 
 textarea {
     width: 1030px;
     height: 152px;
     border-radius: 10px;
-    border: 1px solid #F4F0E9;
+    border: 1px solid var(--color-beige-200);
     gap: 10px;
-    background-color: #F9F7F4;
+    background-color: var(--color-beige-100);
     padding: 20px;
     margin-top: 8px;
     margin-right: 30px;
     text-align: start;
-    font-size: 20px;
-    line-height: 142%;
-    font-weight: 400;
+    font-size: var(--font-size-text-normal);
+    line-height: var(--line-height-big);
+    font-weight: var(--font-weight-normal);
     resize: none;
-
 }
 
 textarea:not(:focus):hover {
-    background-color: #F4F0E9;
-    border: 1px #F4F0E9;
+    background-color: var(--color-beige-200);
+    border: 1px var(--color-beige-200);
 }
 
 textarea:focus {
     border-width: 1px;
     outline: none;
-    border-color: #A6A6A6;
-
+    border-color: var(--color-gray-300);
 }
 
 .form__input:not(:focus):hover {
-    background-color: #F4F0E9;
-    border: 1px #F4F0E9;
+    background-color: var(--color-beige-200);
+    border: 1px var(--color-beige-200);
 }
 
 .form__field {
-
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -525,18 +489,14 @@ select {
     right: 21px;
 }
 
-
 .form__radio-group {
-
     gap: 8px;
     display: flex;
     flex-direction: column;
     margin-top: -1px;
 }
 
-
 .form__checkbox {
-
     width: 26px;
     height: 26px;
     border-radius: 5px;
@@ -553,7 +513,6 @@ select {
 .checkbox__icon {
     display: none;
     position: absolute;
-
 }
 
 .checkbox__input {
@@ -562,16 +521,13 @@ select {
 }
 
 .checkbox__input:checked+.checkbox__icon {
-
     align-items: center;
     display: inline-flex;
     justify-content: center;
     position: absolute;
-
 }
 
 .form__agreement-link {
-
     color: #1B1F2B;
     padding-left: 5px;
 }
@@ -583,24 +539,21 @@ select {
 
 .form__agreement-link:active {
     text-decoration: underline;
-    color: #286562;
+    color: var(--color-green-400);
 }
 
 .form__agreement-text {
-
     padding-left: 19px;
     display: inline-flex;
     align-items: center;
-    font-size: 17px;
-    font-weight: 400;
-    color: #A6A6A6;
-    line-height: 142%;
+    font-size: var(--font-size-text-small);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-gray-300);
+    line-height: var(--line-height-big);
     letter-spacing: -0.01em;
-
 }
 
 .form__agreement {
-
     display: inline-flex;
     align-items: center;
     margin-top: -2px;
@@ -612,67 +565,60 @@ select {
 }
 
 .header-text {
-
-    color: #A6A6A6;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
 }
 
-
 .form__button-find {
-
     display: flex;
     align-items: center;
     justify-content: center;
     width: 235px;
     height: 58px;
     border-radius: 10px;
-    background-color: #286562;
+    background-color: var(--color-green-400);
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: var(--font-size-text-normal);
     border: none;
     cursor: pointer;
 }
 
 .form__button-find:hover {
-    background-color: #3B7E7B;
+    background-color: var(--color-green-300);
 }
 
 .form__button-find:active {
-    background-color: #627F7E;
+    background-color: var(--color-green-200);
 }
 
-
 .form__button-reset {
-
     width: 235px;
     height: 58px;
     border-radius: 10px;
-    background-color: #E0F0E5;
-    color: #286562;
-    font-size: 20px;
+    background-color: var(--color-green-100);
+    color: var(--color-green-400);
+    font-size: var(--font-size-text-normal);
     border: none;
     cursor: pointer;
 }
 
 .form__button-reset:hover {
-    background-color: #F1F3F2;
+    background-color: var(--color-gray-100);
 }
 
 .form__button-reset:active {
-    background-color: #D9DFDB;
+    background-color: var(--color-gray-200);
 }
 
 option {
-
-    color: #A6A6A6;
-    font-size: 20px;
-    font-weight: 400;
+    color: var(--color-gray-300);
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
 }
 
 .form__radio-button_style {
-
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -697,7 +643,6 @@ option {
     border-radius: 50%;
     background-color: #1B1F2B;
     display: block;
-
 }
 
 .form__radio-buttons {
@@ -706,29 +651,13 @@ option {
     gap: 31px;
 }
 
-
 .form__radio-option {
     display: inline-flex;
     align-items: center;
     gap: 11px;
 }
 
-.radio-style {
-
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
-
-}
-
-/*Блок reviews(отзывы)*/
-
 .reviews__cards {
-
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -741,63 +670,53 @@ option {
     max-width: 570px;
     height: 673px;
     width: 100%;
-    background-color: #F4F0E9;
+    background-color: var(--color-beige-200);
     border-radius: 50px;
     padding: 40px;
 }
 
 .reviews__card-text {
-
-    font-weight: 700;
-    font-size: 23px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-text-big);
     color: #1B1F2B;
     text-align: start;
-    line-height: 122%;
+    line-height: var(--line-height-small);
     margin: 0px;
 }
 
 .card__autor-info {
-
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
 .reviews__card-autor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .autor-info__name {
-
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-title-small);
+    line-height: var(--line-height-small);
     color: #1B1F2B;
     text-align: start;
     align-content: center;
-
 }
 
 .autor-info__text {
-
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 142%;
-    color: #A6A6A6;
+    font-size: var(--font-size-text-small);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
+    color: var(--color-gray-300);
     letter-spacing: -0.01em;
     margin: 0px;
 }
 
 .autor-info__icon {
-
     border-radius: 100px;
 }
-
-/*Блок photo (Фото путешественников)*/
 
 .tour-gallery {
     padding-left: 30px;
@@ -820,34 +739,25 @@ option {
 }
 
 .gallery__row_4-items {
-
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 .gallery__row_5-items {
-
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery__image {
-
     border-radius: 50px;
     width: 100%;
     object-fit: cover;
     height: 301px;
-
 }
 
-
-/*Блок history (Истории путешественников)*/
-
 .tour-history__cards {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -865,7 +775,6 @@ option {
     position: relative;
     cursor: pointer;
     transition: background-size 300ms ease;
-
 }
 
 .tour-history__image {
@@ -875,7 +784,6 @@ option {
 }
 
 .tour-history__image-wrapper {
-
     display: inline-block;
     border-radius: 50px;
     height: 100%;
@@ -903,24 +811,19 @@ option {
     max-height: 567px;
     height: 100%;
     width: 100%;
-    
 }
 
-
 .tour-history__text-wrapper {
-
     display: flex;
     flex-direction: column;
     padding: 60px;
     padding-bottom: 0px;
-    
 }
 
 .tour-history__text {
-
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
     text-align: left;
     padding-bottom: 14px;
     max-height: none;
@@ -928,16 +831,14 @@ option {
 }
 
 .menu__list-items {
-
     margin-top: 11px;
     padding-left: 30px;
 }
 
 li {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
-
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
 }
 
 .tour-history__link-container {
@@ -945,34 +846,31 @@ li {
     justify-content: space-between;
     margin: 0px;
     padding: 0px 60px 60px 40px;
-    
 }
 
 .link-more {
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 122%;
+    font-size: var(--font-size-text-big);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-small);
     width: 199px;
     vertical-align: middle;
     display: flex;
     align-items: center;
-    margin-left: 0px 0px 0px -20px;
+    gap: 15px;
     padding: 7px 20px;
-
 }
 
 .tour-history__links-social {
     display: flex;
     align-items: center;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
     gap: 35px;
-
 }
 
 .tour-history__card:hover .link-more {
-    background-color: #286562;
+    background-color: var(--color-green-400);
     border-radius: 50px;
     cursor: pointer;
 }
@@ -983,7 +881,7 @@ li {
 }
 
 .link-more.link-more:active {
-    background-color: #EFA501;
+    background-color: var(--color-orange-200);
     border-radius: 50px;
     cursor: pointer;
 }
@@ -995,14 +893,10 @@ li {
 }
 
 .tour-history__link-social:active {
-    color: #EFA501;
+    color: var(--color-orange-200);
 }
 
-
-/*Блок conclusion (заключение) */
-
 .tour-contacts__container {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1015,22 +909,17 @@ li {
     border-radius: 50px;
 }
 
-
 .tour-contacts__text {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }
 
 .contact__title--black {
-
     color: #1B1F2B;
 }
 
-
 .contact__link--black {
-
     color: #1B1F2B;
 }
 
@@ -1039,28 +928,22 @@ li {
 }
 
 .contact__link--black:hover {
-
     text-decoration: underline;
     cursor: pointer;
 }
 
 .contact__link--black:active {
-
-    color: #286562;
+    color: var(--color-green-400);
     text-decoration: underline;
 }
 
-/*Блок footer(подвал)*/
-
 .footer {
-
     height: 88px;
-    background-color: #F4F0E9;
+    background-color: var(--color-beige-200);
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-
 }
 
 .footer__link-social {
@@ -1068,13 +951,11 @@ li {
     align-items: center;
     gap: 10px;
     color: #1B1F2B;
-
 }
 
 .footer__links-container:hover {
     text-decoration: underline;
     cursor: pointer;
-
 }
 
 .footer__links {
@@ -1082,14 +963,13 @@ li {
     max-width: 408px;
     max-height: 28px;
     gap: 25px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 142%;
+    font-size: var(--font-size-text-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
 }
 
 .footer__link-social:active {
-
-    color: #EFA501;
+    color: var(--color-orange-200);
     text-decoration: underline;
 }
 

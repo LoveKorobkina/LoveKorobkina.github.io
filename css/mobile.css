@@ -1,17 +1,13 @@
-/*Медиа запросы блока header*/
 
 @media (max-width: 500px) {
-
     h1 {
-
         font-size: 34px;
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         line-height: 112%;
         letter-spacing: 0.02em;
     }
 
     .header-container__title-text {
-
         gap: 39px;
     }
 
@@ -25,14 +21,12 @@
 }
 
 @media (max-width: 450px) {
-
     .header-container__menu {
         position: fixed;
         top: 0px;
         background-color: rgba(243, 239, 232, 0.6);
         width: 100%;
         max-height: 23px;
-
     }
 
     .header-container__logo_white {
@@ -48,18 +42,16 @@
     }
 
     .header-container__title {
-
         padding-top: 124px;
         padding-bottom: 52px;
-
     }
 
     .header-container__menu-link {
         max-width: 124px;
         max-height: 23px;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
         color: rgba(27, 31, 43, 1);
         align-items: center;
         margin-top: 3px;
@@ -68,15 +60,10 @@
     .title-text {
         max-width: 310px;
         max-height: 69px;
-
     }
-
 }
 
-/*Блок reviews(отзывы)*/
-
 @media (max-width: 500px) {
-
     .reviews__card_small {
         max-width: 318px;
         width: 100%;
@@ -88,9 +75,8 @@
     .reviews__card-text {
         font-size: 16px;
         max-width: 277px;
-        font-weight: 700;
-        line-height: 142%;
-
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-big);
     }
 
     .card__autor-info {
@@ -105,14 +91,9 @@
         max-height: 592px;
         padding-top: 25px;
     }
-
 }
 
-
-/*Блок Create, Собери свой тур*/
-
 @media (max-width: 500px) {
-
     .tour-create__form-wrapper {
         gap: 0px;
         padding: 17px 20px 40px 16px;
@@ -128,30 +109,26 @@
     }
 
     .form__input {
-
         width: 278px;
         height: 43px;
         margin: 0px;
         padding: 6px;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
     }
 
     option {
         font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
     }
 
     .tour-create__header {
-
         padding-bottom: 40px;
-
     }
 
     .form__buttons {
-
         display: inline-flex;
         margin-top: 3px;
     }
@@ -162,20 +139,17 @@
         height: 47px;
         margin-right: 10px;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
     }
 
     textarea {
-
         width: 278px;
         height: 132px;
         padding: 0px;
-
     }
 
     .form__row {
-
         display: flex;
         flex-direction: column;
         max-width: 278px;
@@ -214,64 +188,53 @@
         margin-top: 3px;
         gap: 5px;
     }
-
 }
 
-/*медиа запросы на блок tour-selection__link*/
-
 @media (max-width: 500px) {
-
     .tour-selection {
         padding-bottom: 75px;
     }
 
     h2 {
-
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         font-size: 34px;
         line-height: 112%;
         padding-top: 75px;
         padding-bottom: 25px;
         letter-spacing: 0.02em;
-
     }
 
     h3 {
-        font-size: 23px;
-        font-weight: 700;
+        font-size: var(--font-size-text-big);
+        font-weight: var(--font-weight-bold);
         line-height: 120%;
         letter-spacing: 0.04em;
     }
 
     .card-price {
-
         margin-top: 12px;
         font-size: 16px;
         letter-spacing: -0.01em;
     }
 
     .tour-selection__card-icon {
-
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         font-size: 16px;
-        line-height: 142%;
+        line-height: var(--line-height-big);
         padding-left: 20px;
         margin-left: -20px;
-
     }
 
     .tour-selection__cards {
-
         display: flex;
         flex-direction: column;
         padding-bottom: 0px;
     }
 
     .tour-selection__link {
-
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         font-size: 16px;
-        line-height: 142%;
+        line-height: var(--line-height-big);
     }
 
     .tour-selection__link--orange {
@@ -280,10 +243,9 @@
     }
 
     .tour-selection__links {
-
         font-size: 16px;
-        font-weight: 700;
-        line-height: 142%;
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-big);
         max-width: 282px;
         display: flex;
         justify-content: center;
@@ -295,13 +257,11 @@
     }
 
     .tour-selection__card {
-
         min-width: 318px;
         width: 100%;
         min-height: 318px;
         height: 100%;
         border-radius: 20px;
-
     }
 
     .tour-selection__card-link {
@@ -314,15 +274,14 @@
     }
 
     .tour-selection__card-text {
-
         margin: 0px;
         padding: 25px 25px 0px 25px;
     }
 
     label {
         font-size: 16px;
-        font-weight: 400;
-        line-height: 142%;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
     }
 
     .form__agreement-text {
@@ -340,10 +299,7 @@
     }
 }
 
-/*Медиа запросы блока photo (Фото путешественников)*/
-
 @media (max-width: 500px) {
-
     .gallery__row_4-items {
         gap: 13px;
     }
@@ -351,7 +307,6 @@
     .gallery__image {
         height: 110px;
         border-radius: 20px;
-
     }
 
     .gallery__row_narrow {
@@ -369,10 +324,7 @@
     }
 }
 
-/*Блок history (Истории путешественников)*/
-
 @media (max-width: 500px) {
-
     .tour-history__card {
         max-width: 318px;
         max-height: 455px;
@@ -381,7 +333,6 @@
 
     .tour-history__card-text {
         padding: 30px 0px 0px 30px;
-
     }
 
     .tour-history__link-container {
@@ -400,7 +351,6 @@
         letter-spacing: 0.02em;
         margin-top: 12px;
         padding-left: 25px;
-
     }
 
     .link-more {
@@ -410,25 +360,18 @@
     .link-more:active {
         border-radius: 50px;
         padding: 7px 20px 7px 20px;
-        background-color: #EFA501;
+        background-color: var(--color-orange-200);
     }
 }
 
-/*Блок conclusion Заключение*/
-
 @media (max-width: 500px) {
-
     .tour-contacts__photo {
         max-width: 130px;
         height: 133px;
     }
-
 }
 
-/*Блок Подвал */
-
 @media (max-width: 500px) {
-
     .footer__links {
         gap: 10px;
     }
@@ -436,5 +379,4 @@
     .footer-wrapper {
         gap: 10px;
     }
-
 }
