@@ -27,6 +27,92 @@
         max-height: 28px;
         height: 100%;
     }
+
+    .link-more__card-icon {
+        margin-top: 0px;
+    }
+
+    .tour-history__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tour-history__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+        max-height: 500px;
+    }
+
+    .tour-history__card-text {
+        height: 100%;
+        max-height: 230px;
+    }
+
+    .tour-history__links-social {
+        display: none;
+    }
+
+    .tour-history__link-container {
+        padding-top: 63px;
+    }
+
+    .link-more {
+        align-items: center;
+        padding: 7px 20px 7px 20px;
+        font-size: 16px;
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-big);
+        width: auto;
+    }
+
+    .form__radio-button_style {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tour-contacts__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-contacts__photo {
+        border-radius: 20px;
+        max-width: 230px;
+    }
+
+    .tour-contacts {
+        padding-bottom: 75px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__links {
+        font-size: 16px;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-big);
+        gap: 15px;
+    }
+
+    .footer__link-social {
+        gap: 5px;
+    }
+
+    .footer-wrapper {
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        height: 98px;
+    }
+
 }
 
 @media (max-width: 860px) {
@@ -73,15 +159,14 @@
         max-width: 310px;
         max-height: 69px;
     }
-}
 
-@media (max-width: 620px) {
     .header-container__menu {
         display: flex;
         justify-content: center;
         gap: 63px;
     }
 }
+
 
 @media (max-width: 800px) {
     .tour-selection__links {
@@ -105,6 +190,7 @@
 }
 
 @media (max-width: 940px) {
+
     .tour-create__form-wrapper {
         padding: 20px 20px 20px 20px;
     }
@@ -165,9 +251,6 @@
         height: 50px;
     }
 
-}
-
-@media (max-width: 940px) {
     .card__autor-info {
         gap: 8px;
     }
@@ -183,9 +266,7 @@
     .autor-info__text {
         font-size: 16px;
     }
-}
 
-@media (max-width: 940px) {
     .gallery__image_hide-next {
         display: none;
     }
@@ -209,98 +290,5 @@
 
     .gallery__image {
         border-radius: 50px;
-    }
-}
-
-@media (max-width: 960px) {
-    .link-more__card-icon {
-        margin-top: 0px;
-    }
-
-    .tour-history__cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .tour-history__card {
-        display: flex;
-        flex-direction: column;
-        max-width: 450px;
-        max-height: 500px;
-    }
-
-    .tour-history__card-text {
-        height: 100%;
-        max-height: 230px;
-    }
-
-    .tour-history__links-social {
-        display: none;
-    }
-
-    .tour-history__link-container {
-        padding-top: 63px;
-    }
-
-    .link-more {
-        align-items: center;
-        padding: 7px 20px 7px 20px;
-        font-size: 16px;
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height-big);
-        width: auto;
-    }
-
-    .form__radio-button_style {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media (max-width: 960px) {
-
-    .tour-contacts__container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tour-contacts__photo {
-        border-radius: 20px;
-        max-width: 230px;
-    }
-
-    .tour-contacts {
-        padding-bottom: 75px;
-    }
-
-}
-
-@media (max-width: 960px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__links {
-        font-size: 16px;
-        font-weight: var(--font-weight-normal);
-        line-height: var(--line-height-big);
-        gap: 15px;
-    }
-
-    .footer__link-social {
-        gap: 5px;
-    }
-
-    .footer-wrapper {
-        gap: 7px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer {
-        height: 98px;
     }
 }

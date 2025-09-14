@@ -9,9 +9,7 @@
     .title-text {
         max-width: 442px;
     }
-}
 
-@media (max-width: 1240px) {
     .tour-selection__cards {
         display: flex;
         justify-content: center;
@@ -21,9 +19,6 @@
     .tour-selection__card {
         max-width: 450px;
     }
-}
-
-@media (max-width: 1240px) {
 
     .tour-create__form-wrapper {
         max-width: 918px;
@@ -66,9 +61,6 @@
     .form__agreement {
         align-items: flex-start;
     }
-}
-
-@media (max-width: 1240px) {
 
     .gallery__image_hide {
         display: none;
@@ -85,9 +77,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-}
 
-@media (max-width: 1240px) {
     .tour-history__card {
         width: 918px;
         height: 567px;
