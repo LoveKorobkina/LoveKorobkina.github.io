@@ -66,6 +66,8 @@ a {
     --font-size-text-big: 23px;
     --font-size-text-normal: 20px;
     --font-size-text-small: 17px;
+    --font-size-text-mobile-small: 16px;
+
 
     --font-weight-bold: 700;
     --font-weight-semibold: 500;
@@ -74,6 +76,8 @@ a {
     --line-height-big: 142%;
     --line-height-small: 122%;
 
+    --color-black: #1B1F2B;
+    --color-white: #FFFFFF;
     --color-orange-200: #EFA501;
     --color-orange-100: #F8E6BE;
     --color-green-400: #286562;
@@ -99,15 +103,14 @@ a {
     scroll-behavior: smooth;
 }
 
-.header-container {
+.header {
     display: flex;
     flex-direction: column;
-    max-width: 1168px;
     width: 100%;
     align-items: center;
 }
 
-.header-container__menu {
+.header__menu {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -118,27 +121,27 @@ a {
     max-width: 1168px;
 }
 
-.header-container__logo_dark {
+.header__logo_dark {
     display: none;
 }
 
-.header-container__menu-links {
+.header__menu-links {
     display: inline-flex;
     gap: 50px;
 }
 
-.header-container__menu-link {
+.header__menu-link {
     font-size: var(--font-size-text-normal);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-big);
 }
 
-.header-container__menu-link:hover {
+.header__menu-link:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.header-container__title-text {
+.header__title-text {
     display: flex;
     flex-direction: column;
     color: white;
@@ -162,7 +165,7 @@ h1 {
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
     background-color: white;
-    color: #1B1F2B;
+    color: var(--color-black);
     font-size: 16px;
     line-height: var(--line-height-big);
     font-weight: var(--font-weight-normal);
@@ -191,18 +194,17 @@ h1 {
     font-weight: var(--font-weight-normal);
 }
 
-.title-text_white {
-    color: #FFFFFF;
+.title__text_white {
+    color: var(--color-white);
     font-size: var(--font-size-text-normal);
     line-height: var(--line-height-big);
     font-weight: var(--font-weight-normal);
     max-width: 562px;
-    max-height: 56px;
     text-align: center;
     margin: 0;
 }
 
-.header-container__title {
+.header__title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,12 +236,12 @@ h2 {
 }
 
 .tour-selection__link {
-    color: #1B1F2B;
+    color: var(--color-black);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-text-big);
 }
 
-.tour-selection__link--orange {
+.tour-selection__link_orange {
     color: var(--color-orange-200);
     border-bottom: 2px solid var(--color-orange-200);
     font-size: var(--font-size-text-big);
@@ -263,14 +265,14 @@ h2 {
 
 @media (min-width: 501px) {
     .tour-selection__link:hover {
-        border-bottom: 2px solid #1B1F2B;
+        border-bottom: 2px solid var(--color-black);
         text-decoration: none;
         padding-bottom: 6px;
         margin-top: 6px;
         cursor: pointer;
     }
 
-    .tour-selection__link--orange:hover {
+    .tour-selection__link_orange:hover {
         text-decoration: none;
         color: var(--color-orange-200);
         border-bottom: 2px solid var(--color-orange-200);
@@ -397,7 +399,7 @@ h3 {
     margin-top: -2px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     gap: 33px;
@@ -405,7 +407,7 @@ form {
 
 .tour-create__form-wrapper {
     display: flex;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-radius: 50px;
     font-size: var(--font-size-text-normal);
     font-weight: var(--font-weight-normal);
@@ -442,11 +444,11 @@ select {
 }
 
 select option {
-    color: #1B1F2B;
+    color: var(--color-black);
 }
 
 select:has(.select-option:checked) {
-    color: #1B1F2B;
+    color: var(--color-black);
 }
 
 .form__row {
@@ -518,10 +520,10 @@ select {
     width: 26px;
     height: 26px;
     border-radius: 5px;
-    border: 3px solid #1B1F2B;
+    border: 3px solid var(--color-black);
     margin: 0px;
     cursor: pointer;
-    accent-color: #1B1F2B;
+    accent-color: var(--color-black);
     position: relative;
     display: flex;
     align-items: center;
@@ -546,7 +548,7 @@ select {
 }
 
 .form__agreement-link {
-    color: #1B1F2B;
+    color: var(--color-black);
     padding-left: 5px;
 }
 
@@ -597,7 +599,7 @@ select {
     height: 58px;
     border-radius: 10px;
     background-color: var(--color-green-400);
-    color: #FFFFFF;
+    color: var(--color-white);
     font-size: var(--font-size-text-normal);
     border: none;
     cursor: pointer;
@@ -640,10 +642,10 @@ option {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    border: 2px solid #1B1F2B;
+    border: 2px solid var(--color-black);
     margin: 0px;
     cursor: pointer;
-    accent-color: #1B1F2B;
+    accent-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -659,7 +661,7 @@ option {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: #1B1F2B;
+    background-color: var(--color-black);
     display: block;
 }
 
@@ -696,13 +698,13 @@ option {
 .reviews__card-text {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-text-big);
-    color: #1B1F2B;
+    color: var(--color-black);
     text-align: start;
     line-height: var(--line-height-small);
     margin: 0px;
 }
 
-.card__autor-info {
+.card-autor__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -718,7 +720,7 @@ option {
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-title-small);
     line-height: var(--line-height-small);
-    color: #1B1F2B;
+    color: var(--color-black);
     text-align: start;
     align-content: center;
 }
@@ -848,7 +850,7 @@ option {
     max-width: 554px;
 }
 
-.menu__list-items {
+.menu-list__items {
     margin-top: 11px;
     padding-left: 30px;
 }
@@ -905,7 +907,7 @@ li {
 }
 
 .tour-history__link-social:hover {
-    color: #FFFFFF;
+    color: var(--color-white);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -933,12 +935,12 @@ li {
     gap: 20px;
 }
 
-.contact__title--black {
-    color: #1B1F2B;
+.tour-contacts__title_black {
+    color: var(--color-black);
 }
 
 .contact__link--black {
-    color: #1B1F2B;
+    color: var(--color-black);
 }
 
 .tour-contacts {
@@ -968,7 +970,7 @@ li {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #1B1F2B;
+    color: var(--color-black);
 }
 
 .footer__links-container:hover {

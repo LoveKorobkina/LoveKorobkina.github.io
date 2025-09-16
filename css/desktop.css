@@ -1,7 +1,7 @@
 
 @media (max-width: 1240px) {
 
-    .header-container__menu {
+    .header__menu {
         max-width: 910px;
         width: 100%;
     }
@@ -82,5 +82,12 @@
         width: 918px;
         height: 567px;
         overflow: hidden;
+    }
+}
+
+@media (max-width: 1150px) {
+    .reviews__card {
+        height: 841px;
+       
     }
 }
