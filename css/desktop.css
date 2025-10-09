@@ -1,93 +1,90 @@
-
 @media (max-width: 1240px) {
+  .header__menu {
+    max-width: 910px;
+    width: 100%;
+  }
 
-    .header__menu {
-        max-width: 910px;
-        width: 100%;
-    }
+  .title-text {
+    max-width: 442px;
+  }
 
-    .title-text {
-        max-width: 442px;
-    }
+  .tour-selection__cards {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
 
-    .tour-selection__cards {
-        display: flex;
-        justify-content: center;
-        gap: 18px;
-    }
+  .tour-selection__card {
+    max-width: 450px;
+  }
 
-    .tour-selection__card {
-        max-width: 450px;
-    }
+  .tour-create__form-wrapper {
+    max-width: 918px;
+    padding: 60px;
+  }
 
-    .tour-create__form-wrapper {
-        max-width: 918px;
-        padding: 60px;
-    }
+  .form__input {
+    width: 389px;
+    height: 68px;
+    margin-right: 0px;
+  }
 
-    .form__input {
-        width: 389px;
-        height: 68px;
-        margin-right: 0px;
-    }
+  .form__row {
+    width: 798px;
+    height: 104px;
+    margin-right: 0px;
+    gap: 20px;
+  }
 
-    .form__row {
-        width: 798px;
-        height: 104px;
-        margin-right: 0px;
-        gap: 20px;
-    }
+  textarea {
+    width: 798px;
+    height: 152px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
 
-    textarea {
-        width: 798px;
-        height: 152px;
-        margin-right: 0px;
-        padding-right: 0px;
-    }
+  .form__row {
+    gap: 33px;
+  }
 
-    .form__row {
-        gap: 33px;
-    }
+  .form__agreement-text {
+    padding-left: 10px;
+    margin-top: 3px;
+    font-size: 16px;
+    text-align: left;
+    display: inline;
+    max-width: 510px;
+  }
 
-    .form__agreement-text {
-        padding-left: 10px;
-        margin-top: 3px;
-        font-size: 16px;
-        text-align: left;
-        display: inline;
-        max-width: 510px;
-    }
+  .form__agreement {
+    align-items: flex-start;
+  }
 
-    .form__agreement {
-        align-items: flex-start;
-    }
+  .gallery__image_hide {
+    display: none;
+  }
 
-    .gallery__image_hide {
-        display: none;
-    }
+  .gallery__row_4-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
-    .gallery__row_4-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
+  .gallery__row_5-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 
-    .gallery__row_5-items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-
-    .tour-history__card {
-        width: 918px;
-        height: 567px;
-        overflow: hidden;
-    }
+  .tour-history__card {
+    width: 918px;
+    height: 567px;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 1150px) {
-    .reviews__card {
-        height: 841px;
-       
-    }
+  .reviews__card {
+    height: 841px;
+  }
 }
