@@ -235,20 +235,20 @@
                         </div>
                         <div class="form__field">
                             <label for="telephone">Телефон</label>
-                            <input class="form__input" id="telephone" type="tel" pattern="[0-9]*" name="telephone"
+                            <input class="form__input" id="telephone" type="tel" pattern="[0-9]{11}" maxlength="11" name="telephone"
                                 placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required />
                         </div>
                     </div>
                     <div class="form__row">
                         <div class="form__field">
                             <label for="dateFrom">Дата от</label>
-                            <input class="form__input" id="dateFrom" type="text" name="dateFrom"
-                                placeholder="ДД.ММ.ГГГГ" required />
+                            <input class="form__input calendar-none" id="dateFrom" type="date" name="dateFrom"
+                                placeholder="ДД.ММ.ГГГГ" min="10-09" max="2025-12-31" required />
                         </div>
                         <div class="form__field">
                             <label for="dateUntil">Дата до</label>
-                            <input class="form__input" id="dateUntil" type="text" name="dateUntil"
-                                placeholder="ДД.ММ.ГГГГ" required />
+                            <input class="form__input calendar-none" id="dateUntil" type="date" name="dateUntil"
+                                placeholder="ДД.ММ.ГГГГ" min="10-09" max="2025-12-31" required />
                         </div>
                     </div>
                     <div class="form__field">

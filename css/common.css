@@ -536,7 +536,32 @@ textarea:focus {
 
 .form__input:not(:focus):hover {
   background-color: var(--color-beige-200);
-  
+}
+
+.calendar-none {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.calendar-none::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+}
+
+::-webkit-datetime-edit-month-field {
+  color: var(--color-gray-300);
+}
+
+::-webkit-datetime-edit-day-field {
+  color: var(--color-gray-300);
+}
+
+::-webkit-datetime-edit-year-field {
+  color: var(--color-gray-300);
 }
 
 .form__field {
