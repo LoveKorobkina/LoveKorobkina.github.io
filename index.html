@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Tour</title>
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/mobile.css">
+    
     <link rel="icon" href="/images/icons/iconFavicon.png" type="image/png">
 
 </head>
@@ -19,10 +21,10 @@
     <header class="header">
         <div class="header__menu">
             <a href="#">
-                <img class="header__logo_white" src="../images/icons/headerLogoWhite.png"
-                    alt="headerLogoWhite" width="181" height="30">
-                <img class="header__logo_dark" src="../images/icons/headerLogoDark.png"
-                    alt="headerLogoDark" width="133" height="22">
+                <img class="header__logo_white" src="../images/icons/headerLogoWhite.png" alt="headerLogoWhite"
+                    width="181" height="30">
+                <img class="header__logo_dark" src="../images/icons/headerLogoDark.png" alt="headerLogoDark" width="133"
+                    height="22">
             </a>
             <div class="header__menu-links">
                 <a class="header__menu-link" href="#selectionAnchor">Туры</a>
@@ -42,6 +44,8 @@
             </div>
         </div>
     </header>
+    <section class="tour-background__image">
+    </section>
     <main class="main">
         <section class="tour-selection section">
             <h2 class="tour-selection__title" id="selectionAnchor">Выбери свой тур</h2>
@@ -235,8 +239,8 @@
                         </div>
                         <div class="form__field">
                             <label for="telephone">Телефон</label>
-                            <input class="form__input" id="telephone" type="tel" pattern="[0-9]{11}" maxlength="11" name="telephone"
-                                placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required />
+                            <input class="form__input" id="telephone" type="tel" pattern="[0-9]{11}" maxlength="11"
+                                name="telephone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required />
                         </div>
                     </div>
                     <div class="form__row">
@@ -273,7 +277,7 @@
                     <div class="form__agreement">
                         <label class="form__checkbox checkbox">
                             <input class="checkbox__input" id="agreement" type="checkbox" required>
-                            <svg class="checkbox__icon" width="13" height="10" viewBox="0 0 13 10" fill="none"
+                            <svg class="checkbox__icon" width="12" height="10" viewBox="0 0 13 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M0.293044 4.53581C0.683569 4.14529 1.31673 4.14529 1.70726 4.53581L4.62161 7.45017L11.1574 0.914353C11.5479 0.523829 12.1811 0.523829 12.5716 0.914353C12.9622 1.30488 12.9622 1.93804 12.5716 2.32857L5.32872 9.57149C4.93819 9.96201 4.30503 9.96201 3.9145 9.57149L0.293044 5.95003C-0.09748 5.5595 -0.09748 4.92634 0.293044 4.53581Z"
@@ -501,8 +505,8 @@
                 </div>
                 <div class="tour-contacts__text">
                     <h3 class="tour-contacts__title_black">Пора в путешествие вместе с нами!</h3>
-                    <p class="header-text tour-contacts__title-text">Напиши на почту и узнай подробности <br>на <a class="contact__link--black"
-                            href="mailto:yourtour@gmail.com">yourtour@gmail.com</a>
+                    <p class="header-text tour-contacts__title-text">Напиши на почту и узнай подробности <br>на <a
+                            class="contact__link--black" href="mailto:yourtour@gmail.com">yourtour@gmail.com</a>
                     </p>
                 </div>
             </div>

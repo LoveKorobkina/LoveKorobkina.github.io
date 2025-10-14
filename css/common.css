@@ -34,7 +34,7 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 .section {
@@ -91,18 +91,9 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("/images/headerPhoto.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   scroll-behavior: smooth;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  align-items: center;
+  position: absolute;
 }
 
 .header__menu {
@@ -129,6 +120,7 @@ a {
   font-size: var(--font-size-text-normal);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-big);
+  color: var(--color-white);
   position: relative;
   text-decoration: none;
   width: max-content;
@@ -158,7 +150,7 @@ a {
 .header__title-text {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--color-white);
   max-width: 768px;
   align-items: center;
   gap: 49px;
@@ -178,7 +170,7 @@ h1 {
   height: 34px;
   padding: 5px 20px 5px 20px;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-white);
   color: var(--color-black);
   font-size: 16px;
   line-height: var(--line-height-big);
@@ -234,6 +226,17 @@ h1 {
   margin: 0 auto;
   background-color: var(--color-beige-100);
   gap: 135px;
+}
+
+.tour-background__image {
+  background-image: url("/images/headerPhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  height: 830px;
 }
 
 h2 {
@@ -507,8 +510,10 @@ select:has(.select-option:checked) {
 }
 
 textarea {
-  width: 1030px;
-  height: 152px;
+  min-width: 1030px;
+  min-height: 152px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
   border: 1px solid var(--color-beige-200);
   gap: 10px;
@@ -520,7 +525,7 @@ textarea {
   font-size: var(--font-size-text-normal);
   line-height: var(--line-height-big);
   font-weight: var(--font-weight-normal);
-  resize: none;
+  resize: both;
 }
 
 textarea:not(:focus):hover {
@@ -595,7 +600,7 @@ select {
   width: 26px;
   height: 26px;
   border-radius: 5px;
-  border: 3px solid var(--color-black);
+  border: 2px solid var(--color-black);
   margin: 0px;
   cursor: pointer;
   accent-color: var(--color-black);
@@ -606,8 +611,9 @@ select {
 }
 
 .checkbox__icon {
-  display: none;
   position: absolute;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .checkbox__input {
@@ -620,6 +626,7 @@ select {
   display: inline-flex;
   justify-content: center;
   position: absolute;
+  opacity: 1;
 }
 
 .form__agreement-link {
@@ -753,12 +760,14 @@ option {
 .form__radio-input {
   opacity: 0;
   position: absolute;
+  margin: 6px;
+  transition: all 300ms ease;
 }
 
 .form__radio-input:checked + .form__radio-button_style::before {
   content: " ";
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: var(--color-black);
   display: block;

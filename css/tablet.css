@@ -240,9 +240,10 @@
   }
 
   textarea {
-    max-width: 389px;
-    max-height: 132px;
+    min-width: 389px;
+    min-height: 132px;
     height: 100%;
+    width: 100%;
   }
 
   .form__radio-group {
