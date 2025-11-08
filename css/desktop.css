@@ -1,4 +1,4 @@
-@media (max-width: 1240px) {
+@media (max-width: 1220px) {
   .header__menu {
     max-width: 910px;
     width: 100%;
@@ -16,6 +16,17 @@
 
   .tour-selection__card {
     max-width: 450px;
+    width: 100%;
+  }
+
+  .tour-selection__image {
+    margin: 0 auto;
+    align-items: center;
+    width: 450px;
+  }
+
+  .tour-selection__image-wrapper {
+    display: flex;
   }
 
   .tour-create__form-wrapper {
@@ -83,10 +94,8 @@
     height: 567px;
     overflow: hidden;
   }
-}
 
-@media (max-width: 1150px) {
-  .reviews__card {
-    height: 841px;
+  .reviews__cards {
+    gap: 18px;
   }
 }

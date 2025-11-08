@@ -1,13 +1,57 @@
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  .main {
+    gap: 75px;
+  }
+
   h1 {
     font-size: 34px;
     font-weight: var(--font-weight-bold);
     line-height: 112%;
     letter-spacing: 0.02em;
+    text-align: center;
+    max-width: 320px;
   }
 
+  .header__title {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .title-text {
+    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
+    max-width: 310px;
+    color: white;
+  }
+
+  .title__text_white {
+    max-width: 310px;
+  }
+
+  .header-container__menu {
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+  }
+
+  .title-wrapper {
+    gap: 0px;
+  }
+
+  .tour-selection__title {
+    padding: 75px 0px 24px 0px;
+  }
+}
+
+@media (max-width: 767px) {
   .header {
     height: 488px;
+  }
+
+  .tour-background__image {
+    max-height: 488px;
+    height: 100%;
   }
 
   .tour-contacts__title-text {
@@ -62,6 +106,7 @@
 
   .form {
     gap: 0px;
+    align-items: flex-start;
   }
 
   .tour-create__form-wrapper {
@@ -122,8 +167,10 @@
   }
 
   textarea {
-    width: 278px;
-    height: 132px;
+    min-width: 278px;
+    min-height: 132px;
+    width: 100%;
+    height: 100%;
     padding: 0px;
   }
 
@@ -208,6 +255,7 @@
     font-weight: var(--font-weight-bold);
     font-size: 16px;
     line-height: var(--line-height-big);
+    padding-bottom: 0px;
   }
 
   .tour-selection__link_orange {
@@ -341,6 +389,9 @@
   }
 
   .tour-history__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 10px;
   }
 
@@ -368,6 +419,10 @@
   .tour-history__link-container {
     margin: 0px;
     padding: 0px 30px 23px 11px;
+  }
+
+  .tour-history__links-social {
+    display: none;
   }
 
   .tour-history__title {
@@ -427,7 +482,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
   .header-container__menu {
     position: fixed;
     top: 0px;
