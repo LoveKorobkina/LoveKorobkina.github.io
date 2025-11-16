@@ -38,14 +38,12 @@ a {
 }
 
 .section {
-  padding-left: 20px;
-  padding-right: 20px;
+
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1170px;
-  width: 100%;
+ 
 }
 
 .title-wrapper {
@@ -284,8 +282,8 @@ h2 {
 }
 
 .tour-selection {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: 501px) {
@@ -390,6 +388,7 @@ h3 {
   justify-content: space-between;
   border-radius: 50px;
   height: 100%;
+  width: 100%;
   position: absolute;
 }
 
