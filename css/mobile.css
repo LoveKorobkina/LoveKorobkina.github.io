@@ -35,20 +35,12 @@
     gap: 63px;
   }
 
-  .title-wrapper {
-    gap: 0px;
-  }
-
   .tour-selection__title {
     padding: 75px 0px 24px 0px;
   }
 }
 
 @media (max-width: 680px) {
-  .header {
-    height: 488px;
-  }
-
   .tour-background__image {
     max-height: 488px;
     height: 100%;
@@ -276,11 +268,6 @@
     margin-top: 2px;
   }
 
-  .tour-selection__image {
-    width: 318px;
-    height: 318px;
-  }
-
   .tour-gallery__grid-container {
     padding-top: 11px;
   }
@@ -310,11 +297,6 @@
     padding: 0px 25px 17px 27px;
   }
 
-  .tour-selection__card-price {
-    max-width: 318px;
-    width: 100%;
-  }
-
   .link-more__card-icon {
     margin-top: -3px;
   }
@@ -331,7 +313,8 @@
   }
 
   .title-wrapper {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    gap: 0px;
   }
 
   .form__agreement-text {
@@ -356,7 +339,8 @@
   }
 
   .reviews__card {
-    padding: 33px 21px 7px 20px;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .gallery__row_4-items {
@@ -448,7 +432,6 @@
     font-size: var(--font-size-text-mobile-small);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-big);
-
   }
 
   .link-more:active {
@@ -483,8 +466,18 @@
     padding: 20px;
   }
 
+.contact__link--black {
+  font-size: var(--font-size-text-mobile-small);
+}
+
   .footer-wrapper {
-    gap: 6px;
+    flex-direction: column;
+  }
+
+  .footer__link-social {
+    font-size: var(--font-size-text-mobile-small);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-big);
   }
 }
 
